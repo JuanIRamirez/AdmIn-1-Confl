@@ -11,6 +11,7 @@ Public Class frmContratoEsc
    Public Escalon As Integer
    Public IncrPorc As Double
    Public MesesEsc As Integer
+   Public Porcent As Single
    '
    Dim FormLoad As Boolean = False
    Dim AlqMes As New Collection
@@ -68,6 +69,14 @@ Public Class frmContratoEsc
       '
       txtImpAlq.Text = ImpAlq
       '
+      If Porcent > 0 Then
+         txtImpPorc.Text = Porcent
+         optPorc.Checked = True
+      Else
+         txtImpPorc.Text = IncrPorc
+         optImp.Checked = True
+      End If
+      '
       If Escalon = 0 Then
          optUniforme.Checked = True
       ElseIf Escalon = 1 Then
@@ -82,7 +91,9 @@ Public Class frmContratoEsc
       '
       If Not optManual.Checked Then
          UpDown1.Value = MesEsc   ' txtMeses = MesEsc
-         txtImpPorc.Text = Math.Abs(IncrPorc)
+         If IncrPorc > 0 Then
+            txtImpPorc.Text = Math.Abs(IncrPorc)
+         End If
          If IncrPorc >= 0 Then
             optAumenta.Checked = True
          Else
@@ -229,8 +240,8 @@ Public Class frmContratoEsc
       'DataGridView1.Enabled = optManual.Checked
       lblMes.Text = IIf(Me.optManual.Checked, "Desde mes:", "Cada:")
       lblMeses.Text = IIf(Me.optManual.Checked, "", "meses")
-      optAumenta.Enabled = Not optManual.Checked
-      optDisminuye.Enabled = Not optManual.Checked
+      'optAumenta.Enabled = Not optManual.Checked
+      'optDisminuye.Enabled = Not optManual.Checked
    End Sub
    '
    Private Sub cmdActualizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdActualizar.Click
@@ -272,7 +283,6 @@ Public Class frmContratoEsc
          End If
       End If
       '
-
       For i = AlqMes.Count To 1 Step -1
          AlqMes.Remove(i)
       Next i
@@ -291,7 +301,11 @@ Public Class frmContratoEsc
             If optPorc.Checked Then
                ImpAnt = Val(CapturaDato(Cn, cTmpM, "TOP 1 Importe", "MesDesde < " & UpDown1.Value,,, "MesDesde DESC") & "")
                Porcent = Val(txtImpPorc.Text)
-               ImpMes = Math.Round(ImpAnt * (1 + Porcent / 100), 2)
+               If optAumenta.Checked Then
+                  ImpMes = Math.Round(ImpAnt * (1 + Porcent / 100), 2)
+               Else
+                  ImpMes = Math.Round(ImpAnt * (1 - Porcent / 100), 2)
+               End If
             Else
                Porcent = 0
                ImpMes = Val(txtImpPorc.Text)
@@ -340,9 +354,9 @@ Public Class frmContratoEsc
                      Porcent = Val(txtImpPorc.Text)
                      'ImpMes = Math.Round(ImpAnt * (1 + Porcent / 100), 2)
                      If optAumenta.Checked Then
-                        ImpMes = ImpAnt * (1 + Porcent / 100)
+                        ImpMes = Math.Round(ImpAnt * (1 + Porcent / 100))
                      Else
-                        ImpMes = ImpAnt * (1 - Porcent / 100)
+                        ImpMes = Math.Round(ImpAnt * (1 - Porcent / 100))
                      End If
                   Else
                      Porcent = 0
@@ -357,7 +371,17 @@ Public Class frmContratoEsc
                ElseIf optBloques.Checked Then
                   If optBloques.Checked Then
                      If Cont = UpDown1.Value Then
-                        ImpMes = ImpAnt + IIf(optAumenta.Checked, Val(txtImpPorc.Text), -Val(txtImpPorc.Text))
+                        If optImp.Checked Then
+                           Porcent = 0
+                           ImpMes = ImpAnt + IIf(optAumenta.Checked, Val(txtImpPorc.Text), -Val(txtImpPorc.Text))
+                        Else
+                           Porcent = Val(txtImpPorc.Text)
+                           If optAumenta.Checked Then
+                              ImpMes = Math.Round(ImpAnt * (1 + Porcent / 100), 2)
+                           Else
+                              ImpMes = Math.Round(ImpAnt * (1 - Porcent / 100), 2)
+                           End If
+                        End If
                         ImpAnt = ImpMes
                         Cont = 0
                      Else
@@ -366,6 +390,7 @@ Public Class frmContratoEsc
                      AlqMes.Add(ImpMes)
                      'Cn.Execute "UPDATE " & cTmp & " SET Importe = " & ImpMes & " WHERE Mes = " & i
                   End If
+                  '
                ElseIf optPorcent.Checked Then
                   If Cont = UpDown1.Value Then
                      ImpMes = Math.Round(ImpAnt + ImpAnt * IIf(optAumenta.Checked, Val(txtImpPorc.Text), -Val(txtImpPorc.Text)) / 100, 2)
@@ -456,8 +481,8 @@ Public Class frmContratoEsc
       '
       With Dr
          Do While .Read
-            cm2.Connection = Cn
-            cm2.Transaction = Trn
+            Cm2.Connection = Cn
+            Cm2.Transaction = Trn
             Cm2.CommandText = "UPDATE " & cTmp & " SET " &
                               " Importe = " & !Importe & ", " &
                               " Iva = " & !Iva & ", " &
@@ -476,7 +501,15 @@ Public Class frmContratoEsc
       'PintarTb(txtImpAlq)
    End Sub
    '
+   Private Sub optPorc_CheckedChanged(sender As Object, e As EventArgs) Handles optPorc.CheckedChanged
+      ActIncrPorc()
+   End Sub
+   '
    Private Sub txtImpPorc_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtImpPorc.TextChanged
+      ActIncrPorc()
+   End Sub
+   '
+   Private Sub ActIncrPorc()
       If optPorc.Checked Then
          If Val(txtImpPorc.Text) > 250 Then
             Mensaje("Porcentaje muy alto")
@@ -484,7 +517,11 @@ Public Class frmContratoEsc
          End If
       End If
       IncrPorc = Val(txtImpPorc.Text) * IIf(optAumenta.Checked, 1, -1)
-      'Actualizar()
+      If optImp.Checked Then
+         Porcent = 0
+      Else
+         Porcent = Val(txtImpPorc.Text)
+      End If
    End Sub
    '
    Private Sub txtImpPorc_GotFocus()

@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AdmIn.exe" size="5882880">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AdmIn.exe" size="5849088">
       <assemblyIdentity name="AdmIn" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>578Lc6XXToPkX1WEyDdHgLF++CQfqUfWtPvblvhLJd0=</dsig:DigestValue>
+        <dsig:DigestValue>LwI8MXHsi8IRQ1g2QRA5yEIeDI1jj1M60W4t+okWA1U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -665,13 +665,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="AdmIn.exe.config" size="3332">
+  <file name="AdmIn.exe.config" size="3272">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>pInvxtVAvOeJoEWMUFnsV9n1vvGarVSd/XP9vhlqx0c=</dsig:DigestValue>
+      <dsig:DigestValue>3MpeyxjLke1anUSAdvmErGMadUFvOZ4CUY7Th2cj3hE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Compilado\sql\AdmIn.sql" size="233388">
@@ -683,31 +683,31 @@
       <dsig:DigestValue>daLyUlV3p5104VkNc18hk31YFpZMyrrzB/ULycvcgKo=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="CrystalReportViewerPage.aspx" size="632">
+  <file name="CrystalReportViewerPage.aspx" size="615">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>wQwBxuiDGcLFarZWGDHoQLbBNbZfptpZK7etS20gq5M=</dsig:DigestValue>
+      <dsig:DigestValue>ubjofrld1Zgcqr6QP1aTYTC4zIqbs61RQDPjbmSsQlg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="CrystalReportViewerPage.aspx.cs" size="2890">
+  <file name="CrystalReportViewerPage.aspx.cs" size="2815">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>BZPWi4pnYnkDsy+BaPij+GXyi4gq0qCpfppRmuyar/4=</dsig:DigestValue>
+      <dsig:DigestValue>xTxJgeWKbvwe/+qZNsnFMtzBlYZF1oVnj/jl0tzxzQs=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="CrystalReportViewerPage.aspx.designer.cs" size="1142">
+  <file name="CrystalReportViewerPage.aspx.designer.cs" size="1109">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>xITzFjKrMNmclzwCPMpk1lgAQMg0J5lWm+MmGW7P1c0=</dsig:DigestValue>
+      <dsig:DigestValue>kWIzNndYnjEVMTIkosPrgPVqbYq47vdny00EvZkCeCY=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Img\Logo_Confl.jpg" size="14494">

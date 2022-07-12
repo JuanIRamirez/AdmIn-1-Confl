@@ -10,6 +10,7 @@
    Dim Escalon, EscalonM, DiaVenc As Byte
    Dim IncrPorc, IncrPorcM As Double
    Dim MesesEsc, MesesEscM As Byte
+   Dim Porcent As Single
    Dim CaptCtas As Boolean
    Dim DescAlq, DescIva, cCtaCaja As String
    '
@@ -75,6 +76,7 @@
             Propiedad = !Propiedad
             Inquilino = !Inquilino
             DiaVenc = !DiaVenc
+            Porcent = CapturaDato(Cn, "ContratosAct", "Porcent", "Numero = " & Numero)
             '
             Escalon = !Escalon
             IncrPorc = !Incremento
@@ -126,11 +128,13 @@
          .Escalon = EscalonM
          .IncrPorc = IncrPorcM
          .MesesEsc = MesesEscM
+         .Porcent = Porcent
          .ShowDialog(Me)
          Escalon = .Escalon
          tbEscalonM.Text = CapturaDato(Cn, "EscContrato", "EscDescrip", "Escalon = " & Escalon)
          tbEscIncrM.Text = .IncrPorc
          tbEscMesesM.Text = .MesesEsc
+         porcent = .Porcent
          lblIncremm.Text = "Increm. " & CapturaDato(Cn, "EscContrato", "EscSimbolo", "Escalon = " & Escalon)
          If tbEscalonM.Text <> tbEscalon.Text Or tbEscMesesM.Text <> tbEscMeses.Text Or tbEscIncrM.Text <> tbEscIncr.Text Then
             cmdAceptar.Enabled = True
@@ -194,8 +198,8 @@
                .ExecuteNonQuery()
             Next
          Else
-            .CommandText = "INSERT INTO [dbo].[ContratosAct]( [Numero], [Escalon], [MesesEsc], [Incremento], [Iva], [Usuario], [FechaMod]) " &
-                           "VALUES( " & Numero & ", " & Escalon & ", " & tbEscMesesM.Text & ", " & tbEscIncrM.Text & ", 0, '" & Uid & "', '" & Format(Now, FormatFechaHora) & "')"
+            .CommandText = "INSERT INTO [dbo].[ContratosAct]( [Numero], [Escalon], [MesesEsc], [Incremento], [Iva], Porcent, [Usuario], [FechaMod]) " &
+                           "VALUES( " & Numero & ", " & Escalon & ", " & tbEscMesesM.Text & ", " & tbEscIncrM.Text & ", 0, " & Porcent & ", '" & Uid & "', '" & Format(Now, FormatFechaHora) & "')"
             .ExecuteNonQuery()
          End If
          '

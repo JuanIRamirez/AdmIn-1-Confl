@@ -19,29 +19,29 @@ Partial Class frmContratoEsc
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-      Me.Frame1 = New System.Windows.Forms.GroupBox()
-      Me.optManual = New System.Windows.Forms.RadioButton()
-      Me.optPorcent = New System.Windows.Forms.RadioButton()
-      Me.optBloques = New System.Windows.Forms.RadioButton()
-      Me.optIncremental = New System.Windows.Forms.RadioButton()
-      Me.optUniforme = New System.Windows.Forms.RadioButton()
-      Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-      Me.Frame2 = New System.Windows.Forms.GroupBox()
-      Me.cmdEliminar = New System.Windows.Forms.Button()
-      Me.cmdActualizar = New System.Windows.Forms.Button()
-      Me.txtImpPorc = New System.Windows.Forms.TextBox()
+        Me.Frame1 = New System.Windows.Forms.GroupBox()
+        Me.optManual = New System.Windows.Forms.RadioButton()
+        Me.optPorcent = New System.Windows.Forms.RadioButton()
+        Me.optBloques = New System.Windows.Forms.RadioButton()
+        Me.optIncremental = New System.Windows.Forms.RadioButton()
+        Me.optUniforme = New System.Windows.Forms.RadioButton()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Frame2 = New System.Windows.Forms.GroupBox()
         Me.optDisminuye = New System.Windows.Forms.RadioButton()
         Me.optAumenta = New System.Windows.Forms.RadioButton()
         Me.lblMeses = New System.Windows.Forms.Label()
         Me.lblMes = New System.Windows.Forms.Label()
         Me.UpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.cmdEliminar = New System.Windows.Forms.Button()
+        Me.cmdActualizar = New System.Windows.Forms.Button()
+        Me.txtImpPorc = New System.Windows.Forms.TextBox()
         Me.txtImpAlq = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.cmdCancelar = New System.Windows.Forms.Button()
         Me.cmdAceptar = New System.Windows.Forms.Button()
         Me.gbValor = New System.Windows.Forms.GroupBox()
-        Me.optImp = New System.Windows.Forms.RadioButton()
         Me.optPorc = New System.Windows.Forms.RadioButton()
+        Me.optImp = New System.Windows.Forms.RadioButton()
         Me.Frame1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Frame2.SuspendLayout()
@@ -146,34 +146,6 @@ Partial Class frmContratoEsc
         Me.Frame2.TabStop = False
         Me.Frame2.Text = "Incremento"
         '
-        'cmdEliminar
-        '
-        Me.cmdEliminar.Location = New System.Drawing.Point(172, 55)
-        Me.cmdEliminar.Name = "cmdEliminar"
-        Me.cmdEliminar.Size = New System.Drawing.Size(62, 23)
-        Me.cmdEliminar.TabIndex = 95
-        Me.cmdEliminar.Text = "&Eliminar"
-        Me.cmdEliminar.UseVisualStyleBackColor = True
-        '
-        'cmdActualizar
-        '
-        Me.cmdActualizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdActualizar.Location = New System.Drawing.Point(93, 55)
-        Me.cmdActualizar.Name = "cmdActualizar"
-        Me.cmdActualizar.Size = New System.Drawing.Size(73, 23)
-        Me.cmdActualizar.TabIndex = 94
-        Me.cmdActualizar.Text = "&Actualizar"
-        Me.cmdActualizar.UseVisualStyleBackColor = True
-        '
-        'txtImpPorc
-        '
-        Me.txtImpPorc.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtImpPorc.Location = New System.Drawing.Point(161, 21)
-        Me.txtImpPorc.MaxLength = 10
-        Me.txtImpPorc.Name = "txtImpPorc"
-        Me.txtImpPorc.Size = New System.Drawing.Size(73, 20)
-        Me.txtImpPorc.TabIndex = 93
-        '
         'optDisminuye
         '
         Me.optDisminuye.AutoSize = True
@@ -220,6 +192,34 @@ Partial Class frmContratoEsc
         Me.UpDown1.Name = "UpDown1"
         Me.UpDown1.Size = New System.Drawing.Size(38, 20)
         Me.UpDown1.TabIndex = 1
+        '
+        'cmdEliminar
+        '
+        Me.cmdEliminar.Location = New System.Drawing.Point(172, 55)
+        Me.cmdEliminar.Name = "cmdEliminar"
+        Me.cmdEliminar.Size = New System.Drawing.Size(62, 23)
+        Me.cmdEliminar.TabIndex = 95
+        Me.cmdEliminar.Text = "&Eliminar"
+        Me.cmdEliminar.UseVisualStyleBackColor = True
+        '
+        'cmdActualizar
+        '
+        Me.cmdActualizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdActualizar.Location = New System.Drawing.Point(93, 55)
+        Me.cmdActualizar.Name = "cmdActualizar"
+        Me.cmdActualizar.Size = New System.Drawing.Size(73, 23)
+        Me.cmdActualizar.TabIndex = 94
+        Me.cmdActualizar.Text = "&Actualizar"
+        Me.cmdActualizar.UseVisualStyleBackColor = True
+        '
+        'txtImpPorc
+        '
+        Me.txtImpPorc.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtImpPorc.Location = New System.Drawing.Point(161, 21)
+        Me.txtImpPorc.MaxLength = 10
+        Me.txtImpPorc.Name = "txtImpPorc"
+        Me.txtImpPorc.Size = New System.Drawing.Size(73, 20)
+        Me.txtImpPorc.TabIndex = 93
         '
         'txtImpAlq
         '
@@ -273,17 +273,6 @@ Partial Class frmContratoEsc
         Me.gbValor.TabStop = False
         Me.gbValor.Text = "Valor"
         '
-        'optImp
-        '
-        Me.optImp.AutoSize = True
-        Me.optImp.Checked = True
-        Me.optImp.Location = New System.Drawing.Point(22, 22)
-        Me.optImp.Name = "optImp"
-        Me.optImp.Size = New System.Drawing.Size(69, 17)
-        Me.optImp.TabIndex = 96
-        Me.optImp.Text = "&Importe $"
-        Me.optImp.UseVisualStyleBackColor = True
-        '
         'optPorc
         '
         Me.optPorc.AutoSize = True
@@ -293,6 +282,18 @@ Partial Class frmContratoEsc
         Me.optPorc.TabIndex = 97
         Me.optPorc.Text = "&Porc. %"
         Me.optPorc.UseVisualStyleBackColor = True
+        '
+        'optImp
+        '
+        Me.optImp.AutoSize = True
+        Me.optImp.Checked = True
+        Me.optImp.Location = New System.Drawing.Point(22, 22)
+        Me.optImp.Name = "optImp"
+        Me.optImp.Size = New System.Drawing.Size(69, 17)
+        Me.optImp.TabIndex = 96
+        Me.optImp.TabStop = True
+        Me.optImp.Text = "&Importe $"
+        Me.optImp.UseVisualStyleBackColor = True
         '
         'frmContratoEsc
         '

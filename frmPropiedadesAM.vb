@@ -291,7 +291,7 @@ Public Class frmPropiedadesAM
          '
          Trn.Commit()
          '
-         Mensaje("Se guardó la Propiedad (" & tbCodigo.Text & ") " & tbDomicilio.Text)
+         'Mensaje("Se guardó la Propiedad (" & tbCodigo.Text & ") " & tbDomicilio.Text)
          '
          Me.Close()
          '
