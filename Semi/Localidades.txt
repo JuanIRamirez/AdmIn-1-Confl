@@ -1,0 +1,18 @@
+cod_loc, detalle, cod_prv, cpostal
+00002	ALLEN                                             	02	          
+00003	REGINA                                            	02	          
+00004	HUERGO                                            	02	          
+00005	CERVANTES                                         	02	          
+00006	MAINQUE                                           	02	          
+00007	FDEZ.ORO                                          	02	          
+00008	CIPOLLETTI                                        	02	          
+00009	NEUQUEN                                           	01	8300      
+00010	PLOTTIER                                          	01	          
+00011	CENTENARIO                                        	01	          
+00012	VISTA ALEGRE SUR                                  	01	          
+00013	VISTA ALEGRE NORTE                                	01	          
+00014	CINCO SALTOS                                      	02	          
+00015	CAMPO GRANDE                                      	02	          
+00016	VILLA MANZANO                                     	02	          
+00017	SAN PATRICIO DEL CHAÑAR                           	01	          
+00001	NEUQUEN                                           	02	8300     

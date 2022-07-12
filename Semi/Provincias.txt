@@ -1,0 +1,23 @@
+02	RIO NEGRO           
+03	MENDOZA             
+04	BUENOS AIRES        
+05	LA PAMPA            
+06	CHUBUT              
+08	TIERRA DEL FUEGO    
+09	SAN JUAN            
+10	SAN LUIS            
+11	CATAMARCA           
+12	LA RIOJA            
+13	TUCUMAN             
+07	SANTA CRUZ          
+14	ENTRE RIOS          
+15	CORRIENTES          
+16	MISIONES            
+17	FORMOSA             
+18	SALTA               
+19	JUJUY               
+20	CHACO               
+21	SANTIAGO DEL ESTERO 
+22	CORDOBA             
+23	SANTA FE            
+01	NEUQUEN             

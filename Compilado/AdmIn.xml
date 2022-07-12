@@ -1,0 +1,2776 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AdmIn
+</name>
+</assembly>
+<members>
+<member name="T:AdmIn.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:AdmIn.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:AdmIn.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:AdmIn.My.Resources.Resources.Email">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AlicIvaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AsienDetDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AsienTmpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AsientosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AsientosDesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AuditDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AuxReporteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AvisoDeudaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AvisoHorasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.BancoPropDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.BancosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.BancosCtasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.BancosMovDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.BarriosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CajaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CajaRecChDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CajasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CatGciasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChCarteraDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChLiqProDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChLiqProTmpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChPropiosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChReciboDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChReciboDescDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChReciboTmpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ClientesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobOtrDetDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobOtrTmpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobrosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobrosDetDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobrosDetTmpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobrosOtrDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobrosOtrChDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobrosOtrTrDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComACobDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComACobDetDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComACobRDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComACobRChDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComACobRDetDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CompIntDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CompraOtrDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CompraOtrDetDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CompraOtrTmpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComprasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComprasDetDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CompraTmpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConceptosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConfigDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConfigUsuDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsConcepDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsDepartDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsFactDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsLiqAuxDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsLiqDetDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsLiquidDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsorciosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsRetGciasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ContratosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ContratosActDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CtaCteProDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EmpresasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EscContratoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstadosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstChCarteraDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstContrDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstLiquidDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstMovBcoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstPagosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstVentasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.FactInqDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.GarantiasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.IdiomasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.IngresosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.IngresosDetDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.InqLiqAuxDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.InquilinosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqAuxDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqCabDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqCobDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqCobChDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqCobDetDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqDetDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqPParDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqTRDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropCondDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropietDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropietAgDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropietDetDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropResDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropTmpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropTRDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ListAdelDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LocalidadDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LogicosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.MayorAuxDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.MovBancosAuxDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.OcupacionesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.OrdenPagoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.OrdenPagoCHDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.OrdenPagoDetDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.OrdenPagoTRDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PagosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PagosDetDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PagosDetTmpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PaisesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PedidosProvDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PermisosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PlanCtasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropiedadesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropiedConcDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropietAgDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropietAgDetDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropietariosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropietCondDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropietCondConcDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ProvCasualDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ProveedoresDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.RecepcionDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.RepVariosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.RepVariosAuxDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ResALiqPropDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ResAlqAnualDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ResumenCajaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.RetGciasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.SucBcoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.TipoCompDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.TipoIvaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.TipoMovBcoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.TipoPropDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.TraductorDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.UsuariosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.VentasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.VentasChDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.VentasDetDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.VentasTmpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AlicIvaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AsienDetRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AsienTmpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AsientosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AsientosDesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AuditRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AuxReporteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AvisoDeudaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AvisoHorasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.BancoPropRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.BancosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.BancosCtasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.BancosMovRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.BarriosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CajaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CajaRecChRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CajasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CatGciasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChCarteraRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChLiqProRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChLiqProTmpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChPropiosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChReciboRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChReciboDescRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChReciboTmpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ClientesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobOtrDetRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobOtrTmpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobrosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobrosDetRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobrosDetTmpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobrosOtrRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobrosOtrChRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobrosOtrTrRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComACobRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComACobDetRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComACobRRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComACobRChRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComACobRDetRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CompIntRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CompraOtrRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CompraOtrDetRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CompraOtrTmpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComprasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComprasDetRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CompraTmpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConceptosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConfigRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConfigUsuRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsConcepRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsDepartRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsFactRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsLiqAuxRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsLiqDetRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsLiquidRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsorciosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsRetGciasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ContratosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ContratosActRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CtaCteProRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EmpresasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EscContratoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstadosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstChCarteraRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstContrRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstLiquidRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstMovBcoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstPagosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstVentasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.FactInqRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.GarantiasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.IdiomasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.IngresosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.IngresosDetRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.InqLiqAuxRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.InquilinosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqAuxRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqCabRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqCobRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqCobChRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqCobDetRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqDetRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqPParRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqTRRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropCondRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropietRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropietAgRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropietDetRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropResRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropTmpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropTRRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ListAdelRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LocalidadRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LogicosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.MayorAuxRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.MovBancosAuxRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.OcupacionesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.OrdenPagoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.OrdenPagoCHRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.OrdenPagoDetRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.OrdenPagoTRRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PagosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PagosDetRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PagosDetTmpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PaisesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PedidosProvRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PermisosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PlanCtasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropiedadesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropiedConcRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropietAgRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropietAgDetRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropietariosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropietCondRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropietCondConcRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ProvCasualRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ProveedoresRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.RecepcionRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.RepVariosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.RepVariosAuxRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ResALiqPropRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ResAlqAnualRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ResumenCajaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.RetGciasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.SucBcoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.TipoCompRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.TipoIvaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.TipoMovBcoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.TipoPropRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.TraductorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.UsuariosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.VentasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.VentasChRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.VentasDetRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.VentasTmpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AlicIvaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AsienDetRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AsienTmpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AsientosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AsientosDesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AuditRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AuxReporteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AvisoDeudaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.AvisoHorasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.BancoPropRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.BancosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.BancosCtasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.BancosMovRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.BarriosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CajaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CajaRecChRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CajasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CatGciasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChCarteraRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChLiqProRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChLiqProTmpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChPropiosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChReciboRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChReciboDescRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ChReciboTmpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ClientesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobOtrDetRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobOtrTmpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobrosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobrosDetRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobrosDetTmpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobrosOtrRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobrosOtrChRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CobrosOtrTrRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComACobRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComACobDetRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComACobRRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComACobRChRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComACobRDetRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CompIntRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CompraOtrRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CompraOtrDetRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CompraOtrTmpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComprasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ComprasDetRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CompraTmpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConceptosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConfigRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConfigUsuRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsConcepRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsDepartRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsFactRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsLiqAuxRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsLiqDetRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsLiquidRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsorciosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ConsRetGciasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ContratosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ContratosActRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.CtaCteProRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EmpresasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EscContratoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstadosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstChCarteraRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstContrRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstLiquidRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstMovBcoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstPagosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.EstVentasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.FactInqRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.GarantiasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.IdiomasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.IngresosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.IngresosDetRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.InqLiqAuxRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.InquilinosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqAuxRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqCabRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqCobRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqCobChRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqCobDetRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqDetRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqPParRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqInqTRRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropCondRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropietRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropietAgRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropietDetRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropResRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropTmpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LiqPropTRRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ListAdelRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LocalidadRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.LogicosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.MayorAuxRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.MovBancosAuxRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.OcupacionesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.OrdenPagoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.OrdenPagoCHRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.OrdenPagoDetRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.OrdenPagoTRRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PagosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PagosDetRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PagosDetTmpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PaisesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PedidosProvRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PermisosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PlanCtasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropiedadesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropiedConcRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropietAgRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropietAgDetRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropietariosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropietCondRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.PropietCondConcRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ProvCasualRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ProveedoresRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.RecepcionRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.RepVariosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.RepVariosAuxRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ResALiqPropRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ResAlqAnualRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.ResumenCajaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.RetGciasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.SucBcoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.TipoCompRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.TipoIvaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.TipoMovBcoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.TipoPropRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.TraductorRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.UsuariosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.VentasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.VentasChRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.VentasDetRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSet.VentasTmpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.AlicIvaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.AsienDetTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.AsienTmpTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.AsientosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.AsientosDesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.AuditTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.AuxReporteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.AvisoDeudaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.AvisoHorasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.BancoPropTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.BancosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.BancosCtasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.BancosMovTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.BarriosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.CajaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.CajaRecChTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.CajasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.CatGciasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ChCarteraTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ChLiqProTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ChLiqProTmpTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ChPropiosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ChReciboTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ChReciboDescTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ChReciboTmpTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ClientesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.CobOtrDetTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.CobOtrTmpTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.CobrosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.CobrosDetTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.CobrosDetTmpTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.CobrosOtrTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.CobrosOtrChTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.CobrosOtrTrTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ComACobTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ComACobDetTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ComACobRTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ComACobRChTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ComACobRDetTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.CompIntTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.CompraOtrTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.CompraOtrDetTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.CompraOtrTmpTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ComprasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ComprasDetTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.CompraTmpTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ConceptosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ConfigTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ConfigUsuTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ConsConcepTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ConsDepartTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ConsFactTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ConsLiqAuxTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ConsLiqDetTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ConsLiquidTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ConsorciosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ConsRetGciasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ContratosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ContratosActTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.CtaCteProTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.EmpresasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.EscContratoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.EstadosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.EstChCarteraTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.EstContrTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.EstLiquidTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.EstMovBcoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.EstPagosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.EstVentasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.FactInqTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.GarantiasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.IdiomasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.IngresosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.IngresosDetTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.InqLiqAuxTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.InquilinosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.LiqAuxTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.LiqInqCabTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.LiqInqCobTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.LiqInqCobChTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.LiqInqCobDetTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.LiqInqDetTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.LiqInqPParTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.LiqInqTRTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.LiqPropCondTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.LiqPropietTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.LiqPropietAgTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.LiqPropietDetTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.LiqPropResTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.LiqPropTmpTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.LiqPropTRTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ListAdelTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.LocalidadTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.LogicosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.MayorAuxTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.MovBancosAuxTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.OcupacionesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.OrdenPagoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.OrdenPagoCHTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.OrdenPagoDetTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.OrdenPagoTRTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.PagosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.PagosDetTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.PagosDetTmpTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.PaisesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.PedidosProvTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.PermisosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.PlanCtasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.PropiedadesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.PropiedConcTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.PropietAgTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.PropietAgDetTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.PropietariosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.PropietCondTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.PropietCondConcTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ProvCasualTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ProveedoresTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.RecepcionTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.RepVariosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.RepVariosAuxTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ResALiqPropTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ResAlqAnualTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.ResumenCajaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.RetGciasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.SucBcoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.TipoCompTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.TipoIvaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.TipoMovBcoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.TipoPropTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.TraductorTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.UsuariosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.VentasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.VentasChTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.VentasDetTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.VentasTmpTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:AdmIn.AdminSemiDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(AdmIn.AdminSemiDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:AdmIn.AdminSemiDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(AdmIn.AdminSemiDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:AdmIn.AdminSemiDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(AdmIn.AdminSemiDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:AdmIn.AdminSemiDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:AdmIn.AdminSemiDataSetTableAdapters.TableAdapterManager.UpdateAll(AdmIn.AdminSemiDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:AdmIn.AdminSemiDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,2935 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5547A9C-1E65-457B-B7F2-5B30DD082781}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AdmIn.My.MyApplication</StartupObject>
+    <RootNamespace>AdmIn</RootNamespace>
+    <AssemblyName>AdmIn</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ManifestCertificateThumbprint>945390025C928F5CB32AE6932C6BCBA685E52664</ManifestCertificateThumbprint>
+    <ManifestKeyFile>AdmIn_1_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SignAssembly>false</SignAssembly>
+    <TargetZone>LocalIntranet</TargetZone>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\Juan\source\repos\AdmIn\Compilado\app.publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/AdmIn/</UpdateUrl>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>16</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>Compilado\</OutputPath>
+    <DocumentationFile>AdmIn.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AdmIn.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DotVVM.Contrib, Version=2.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\DotVVM.Contrib.CrystalReportViewer.2.3.2\lib\net451\DotVVM.Contrib.dll</HintPath>
+    </Reference>
+    <Reference Include="DotVVM.Core, Version=2.3.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da, processorArchitecture=MSIL">
+      <HintPath>packages\DotVVM.Core.2.3.1\lib\net451\DotVVM.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotVVM.Framework, Version=2.3.1.0, Culture=neutral, PublicKeyToken=23f3607db32275da, processorArchitecture=MSIL">
+      <HintPath>packages\DotVVM.2.3.1\lib\net451\DotVVM.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <HintPath>packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeAnalysis.Common.1.0.0\lib\net45\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeAnalysis.CSharp.1.0.0\lib\net45\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.1.0.0\lib\netstandard1.1\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Options.1.0.0\lib\netstandard1.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Primitives.1.0.0\lib\netstandard1.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlConnector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
+      <HintPath>packages\MySqlConnector.2.1.8\lib\net461\MySqlConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.1.36.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Collections.Immutable.1.1.36\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.DiagnosticSource.5.0.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Metadata, Version=1.0.21.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Reflection.Metadata.1.0.21\lib\portable-net45+win8\System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.4.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CrystalDecisions.CrystalReports" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminSemiDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdminSemiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Clases.vb" />
+    <Compile Include="Compilado\Report\AdelPropSdo1.vb">
+      <DependentUpon>AdelPropSdo.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\AdelantosProp.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdelantosProp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\AdelPropSdoRes.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdelPropSdoRes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\ConcAdmNR.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConcAdmNR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\ConceptosAdm.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConceptosAdm.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\ConceptosLiq.vb">
+      <DependentUpon>ConceptosLiq.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\ConceptosFijos.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConceptosFijos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\ConceptosFijosAct.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConceptosFijosAct.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\ConceptosCob.vb">
+      <DependentUpon>ConceptosCob.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\Estdeudainq2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Estdeudainq2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\EstDeudaTInqRes.vb">
+      <DependentUpon>EstDeudaTInqRes.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Compilado\Report\EstDeudaTInq.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EstDeudaTInq.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\FacturaA.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FacturaA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\FacturaB.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FacturaB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\InquilinosGar.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InquilinosGar.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\LiqInqConf.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LiqInqConf.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\LiqPropietAdl.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LiqPropietAdl.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\LiqPropietAdlAut.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LiqPropietAdlAut.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\LiqPropietAg.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LiqPropietAg.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\LiqPropietDet.vb">
+      <DependentUpon>LiqPropietDet.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\LiqPropietDupl.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LiqPropietDupl.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\ListContratos.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListContratos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\ListInqAct.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListInqAct.RPT</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\PrdTipo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrdTipo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\PrdTipoAlq.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrdTipoAlq.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\Propiedades.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Propiedades.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\PropiedConc.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PropiedConc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\PropiedInq.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PropiedInq.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\PropiedNomencl.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PropiedNomencl.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\ResALiqProp.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResALiqProp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\ResALiqPropRes.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResALiqPropRes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\ResAlqAnual.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResAlqAnual.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\RetGcias.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RetGcias.RPT</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\TransfInq.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransfInq.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\Ventas.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ventas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmABM.Designer.vb">
+      <DependentUpon>frmABM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmABM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlquileres.Designer.vb">
+      <DependentUpon>frmAlquileres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlquileres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuditoria.Designer.vb">
+      <DependentUpon>frmAuditoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuditoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBancos.Designer.vb">
+      <DependentUpon>frmBancos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBancos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBancosAM.Designer.vb">
+      <DependentUpon>frmBancosAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBancosAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBancosCtas.Designer.vb">
+      <DependentUpon>frmBancosCtas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBancosCtas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBancosCtasAM.Designer.vb">
+      <DependentUpon>frmBancosCtasAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBancosCtasAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBancosMov.designer.vb">
+      <DependentUpon>frmBancosMov.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBancosMov.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBancosMovAM.designer.vb">
+      <DependentUpon>frmBancosMovAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBancosMovAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCajaRecList.Designer.vb">
+      <DependentUpon>frmCajaRecList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCajaRecList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEnviarEmail.Designer.vb">
+      <DependentUpon>FrmEnviarEmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEnviarEmail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCajas.Designer.vb">
+      <DependentUpon>frmCajas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCajas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatGcias.Designer.vb">
+      <DependentUpon>frmCatGcias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatGcias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChRechAM.designer.vb">
+      <DependentUpon>frmChRechAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChRechAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCobrosABM.Designer.vb">
+      <DependentUpon>frmCobrosABM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCobrosABM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCobrosOtr.Designer.vb">
+      <DependentUpon>frmCobrosOtr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCobrosOtr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompras.designer.vb">
+      <DependentUpon>frmCompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComprasAM.designer.vb">
+      <DependentUpon>frmComprasAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmComprasAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComprasDet.designer.vb">
+      <DependentUpon>frmComprasDet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmComprasDet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComprasOtrAmDet.Designer.vb">
+      <DependentUpon>frmComprasOtrAmDet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmComprasOtrAmDet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComprasOtrAm.Designer.vb">
+      <DependentUpon>frmComprasOtrAm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmComprasOtrAm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComprasOtr.Designer.vb">
+      <DependentUpon>frmComprasOtr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmComprasOtr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComprasRefRto.designer.vb">
+      <DependentUpon>frmComprasRefRto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmComprasRefRto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConceptos.Designer.vb">
+      <DependentUpon>frmConceptos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConceptos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConceptosAM.Designer.vb">
+      <DependentUpon>frmConceptosAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConceptosAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContratoAct.Designer.vb">
+      <DependentUpon>frmContratoAct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmContratoAct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContratosList.Designer.vb">
+      <DependentUpon>frmContratosList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmContratosList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFondo.Designer.vb">
+      <DependentUpon>frmFondo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFondo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGarantesAM.Designer.vb">
+      <DependentUpon>frmGarantesAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGarantesAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIngProducto.designer.vb">
+      <DependentUpon>frmIngProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmIngProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGarantes.Designer.vb">
+      <DependentUpon>frmGarantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGarantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLiqInquilinosRet.Designer.vb">
+      <DependentUpon>frmLiqInquilinosRet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLiqInquilinosRet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListAlq.Designer.vb">
+      <DependentUpon>frmListAlq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListAlq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListConcAdm.Designer.vb">
+      <DependentUpon>frmListConcAdm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListConcAdm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListRetGan.Designer.vb">
+      <DependentUpon>frmListRetGan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListRetGan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListTransf.Designer.vb">
+      <DependentUpon>frmListTransf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListTransf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListVarios.Designer.vb">
+      <DependentUpon>frmListVarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListVarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListPropiedades.Designer.vb">
+      <DependentUpon>frmListPropiedades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListPropiedades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListVentas.Designer.vb">
+      <DependentUpon>frmListVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdenesPago.Designer.vb">
+      <DependentUpon>frmOrdenesPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenesPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdenesPagoAM.Designer.vb">
+      <DependentUpon>frmOrdenesPagoAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenesPagoAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdenPagoChDev.Designer.vb">
+      <DependentUpon>frmOrdenPagoChDev.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenPagoChDev.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdenPagoConf.Designer.vb">
+      <DependentUpon>frmOrdenPagoConf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenPagoConf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdenPagoPago.Designer.vb">
+      <DependentUpon>frmOrdenPagoPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenPagoPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdenPagoVs.Designer.vb">
+      <DependentUpon>frmOrdenPagoVs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenPagoVs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdenPagoVsAg.Designer.vb">
+      <DependentUpon>frmOrdenPagoVsAg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenPagoVsAg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPagos.Designer.vb">
+      <DependentUpon>frmPagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPagosAgrCmp.Designer.vb">
+      <DependentUpon>frmPagosAgrCmp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPagosAgrCmp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPermisos.designer.vb">
+      <DependentUpon>frmPermisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPermisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPropiedadesAM.Designer.vb">
+      <DependentUpon>frmPropiedadesAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPropiedadesAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPropiedades.Designer.vb">
+      <DependentUpon>frmPropiedades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPropiedades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCajaList.Designer.vb">
+      <DependentUpon>frmCajaList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCajaList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaja.Designer.vb">
+      <DependentUpon>frmCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCajaAM.Designer.vb">
+      <DependentUpon>frmCajaAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCajaAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCajaRec.Designer.vb">
+      <DependentUpon>frmCajaRec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCajaRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCajaTransf.Designer.vb">
+      <DependentUpon>frmCajaTransf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCajaTransf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChCartera.Designer.vb">
+      <DependentUpon>frmChCartera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChCartera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChCarteraAm.Designer.vb">
+      <DependentUpon>frmChCarteraAm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChCarteraAm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChCarteraList.Designer.vb">
+      <DependentUpon>frmChCarteraList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChCarteraList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCodigoAut.Designer.vb">
+      <DependentUpon>frmCodigoAut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCodigoAut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContrato.Designer.vb">
+      <DependentUpon>frmContrato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmContrato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContratoEsc.Designer.vb">
+      <DependentUpon>frmContratoEsc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmContratoEsc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContratoFin.Designer.vb">
+      <DependentUpon>frmContratoFin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmContratoFin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContratosAbm.Designer.vb">
+      <DependentUpon>frmContratosAbm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmContratosAbm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepartamentos.designer.vb">
+      <DependentUpon>frmDepartamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepartamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFactInqAM.Designer.vb">
+      <DependentUpon>frmFactInqAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFactInqAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFactInquilino.Designer.vb">
+      <DependentUpon>frmFactInquilino.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFactInquilino.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInquilinos.Designer.vb">
+      <DependentUpon>frmInquilinos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInquilinos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInquilinosAM.Designer.vb">
+      <DependentUpon>frmInquilinosAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInquilinosAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLiqInquilinosCH.Designer.vb">
+      <DependentUpon>frmLiqInquilinosCH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLiqInquilinosCH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLiqInquilinosAM.Designer.vb">
+      <DependentUpon>frmLiqInquilinosAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLiqInquilinosAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLiqInquilinosCS.Designer.vb">
+      <DependentUpon>frmLiqInquilinosCS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLiqInquilinosCS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLiqInquilinos.Designer.vb">
+      <DependentUpon>frmLiqInquilinos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLiqInquilinos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPagoCh.Designer.vb">
+      <DependentUpon>frmPagoCh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPagoCh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLiqPropietAdl.Designer.vb">
+      <DependentUpon>frmLiqPropietAdl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLiqPropietAdl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLiqPropiet.Designer.vb">
+      <DependentUpon>frmLiqPropiet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLiqPropiet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLiqPropProy.Designer.vb">
+      <DependentUpon>frmLiqPropProy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLiqPropProy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLiqTransf.Designer.vb">
+      <DependentUpon>frmLiqTransf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLiqTransf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListConcFijos.Designer.vb">
+      <DependentUpon>frmListConcFijos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListConcFijos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParametros.designer.vb">
+      <DependentUpon>frmParametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmParametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlanCtasAM.Designer.vb">
+      <DependentUpon>frmPlanCtasAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlanCtasAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPropConc.Designer.vb">
+      <DependentUpon>frmPropConc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPropConc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPropConcAM.Designer.vb">
+      <DependentUpon>frmPropConcAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPropConcAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPropietAg.Designer.vb">
+      <DependentUpon>frmPropietAg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPropietAg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPropietariosAM.Designer.vb">
+      <DependentUpon>frmPropietariosAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPropietariosAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProveedores.Designer.vb">
+      <DependentUpon>frmProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProveedoresAM.designer.vb">
+      <DependentUpon>frmProveedoresAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProveedoresAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegError.Designer.vb">
+      <DependentUpon>frmRegError.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegError.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRendPropPend.Designer.vb">
+      <DependentUpon>frmRendPropPend.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRendPropPend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte.designer.vb">
+      <DependentUpon>frmReporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRestValDef.designer.vb">
+      <DependentUpon>frmRestValDef.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRestValDef.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeñasAM.Designer.vb">
+      <DependentUpon>frmSeñasAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeñasAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSucursales.designer.vb">
+      <DependentUpon>frmSucursales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSucursales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLiqPropietABM.Designer.vb">
+      <DependentUpon>frmLiqPropietABM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLiqPropietABM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLiqInquilinosPend.Designer.vb">
+      <DependentUpon>frmLiqInquilinosPend.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLiqInquilinosPend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListAdelPropSdo.Designer.vb">
+      <DependentUpon>frmListAdelPropSdo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListAdelPropSdo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuarios.Designer.vb">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListInquilinos.Designer.vb">
+      <DependentUpon>frmListInquilinos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListInquilinos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLiqPropietPend.Designer.vb">
+      <DependentUpon>frmLiqPropietPend.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLiqPropietPend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuariosCC.Designer.vb">
+      <DependentUpon>frmUsuariosCC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuariosCC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentas.designer.vb">
+      <DependentUpon>frmVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentasAM.designer.vb">
+      <DependentUpon>frmVentasAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentasAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentasAMDet.designer.vb">
+      <DependentUpon>frmVentasAMDet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentasAMDet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentasAMProd.designer.vb">
+      <DependentUpon>frmVentasAMProd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentasAMProd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentasRenum.designer.vb">
+      <DependentUpon>frmVentasRenum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentasRenum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modAlgo.vb" />
+    <Compile Include="modCompat.vb" />
+    <Compile Include="modContab.vb" />
+    <Compile Include="modDb.vb" />
+    <Compile Include="modInicio.vb" />
+    <Compile Include="modPol.vb" />
+    <Compile Include="modReps.vb" />
+    <Compile Include="modWin.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frmPropietarios.Designer.vb">
+      <DependentUpon>frmPropietarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPropietarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRepDb.Designer.vb">
+      <DependentUpon>frmRepDb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRepDb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\Caja.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Caja.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\ChCartera.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChCartera.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\CompCaja.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CompCaja.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\EstDeudaInq.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EstDeudaInq.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\LiqInqDetCob.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LiqInqDetCob.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\ListInq1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListInq.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\OrdPagoOtr.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdPagoOtr.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reporte.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\ReciboX.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReciboX.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compilado\Report\ResDeudaInq.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResDeudaInq.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AdminSemiDataSet.xsc">
+      <DependentUpon>AdminSemiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AdminSemiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdminSemiDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AdminSemiDataSet.xss">
+      <DependentUpon>AdminSemiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Compilado\Report\Estdeudainq2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Estdeudainq2.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\EstDeudaTInqRes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EstDeudaTInqRes.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\LiqPropiet.rpt" />
+    <None Include="Compilado\Report\LiqPropietAdl.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LiqPropietAdl.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\LiqPropietDupl.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LiqPropietDupl.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\LiqPropietAg.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LiqPropietAg.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\LiqPropietAdlAut.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LiqPropietAdlAut.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\RetGcias.RPT">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RetGcias.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\AdelantosProp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AdelantosProp.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\AdelPropSdoRes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AdelPropSdoRes.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\ConcAdmNR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConcAdmNR.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\ConceptosAdm.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConceptosAdm.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\ConceptosFijos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConceptosFijos.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\EstDeudaTInq.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EstDeudaTInq.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\LiqInqConf.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LiqInqConf.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\ListInqAct.RPT">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListInqAct.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\ConceptosFijosAct.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConceptosFijosAct.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\ConceptosCob.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConceptosCob.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\ConceptosLiq.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConceptosLiq.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\AdelPropSdo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AdelPropSdo1.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\FacturaA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FacturaA.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\FacturaB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FacturaB.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\LiqPropietDet.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LiqPropietDet.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\TransfInq.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TransfInq.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\ResALiqProp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ResALiqProp.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\ListContratos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListContratos.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\Ventas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Ventas.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\ResALiqPropRes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ResALiqPropRes.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\ResAlqAnual.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ResAlqAnual.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\InquilinosGar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InquilinosGar.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\PrdTipo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrdTipo.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\PrdTipoAlq.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrdTipoAlq.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\Propiedades.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Propiedades.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\PropiedConc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PropiedConc.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\PropiedInq.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PropiedInq.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\PropiedNomencl.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PropiedNomencl.vb</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="frmABM.resx">
+      <DependentUpon>frmABM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlquileres.resx">
+      <DependentUpon>frmAlquileres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuditoria.resx">
+      <DependentUpon>frmAuditoria.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBancos.resx">
+      <DependentUpon>frmBancos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBancosAM.resx">
+      <DependentUpon>frmBancosAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBancosCtas.resx">
+      <DependentUpon>frmBancosCtas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBancosCtasAM.resx">
+      <DependentUpon>frmBancosCtasAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBancosMov.resx">
+      <DependentUpon>frmBancosMov.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBancosMovAM.resx">
+      <DependentUpon>frmBancosMovAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCajaRecList.resx">
+      <DependentUpon>frmCajaRecList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEnviarEmail.resx">
+      <DependentUpon>FrmEnviarEmail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCajas.resx">
+      <DependentUpon>frmCajas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatGcias.resx">
+      <DependentUpon>frmCatGcias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChRechAM.resx">
+      <DependentUpon>frmChRechAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCobrosABM.resx">
+      <DependentUpon>frmCobrosABM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCobrosOtr.resx">
+      <DependentUpon>frmCobrosOtr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompras.resx">
+      <DependentUpon>frmCompras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComprasAM.resx">
+      <DependentUpon>frmComprasAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComprasDet.resx">
+      <DependentUpon>frmComprasDet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComprasOtrAmDet.resx">
+      <DependentUpon>frmComprasOtrAmDet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComprasOtrAm.resx">
+      <DependentUpon>frmComprasOtrAm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComprasOtr.resx">
+      <DependentUpon>frmComprasOtr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComprasRefRto.resx">
+      <DependentUpon>frmComprasRefRto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConceptos.resx">
+      <DependentUpon>frmConceptos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConceptosAM.resx">
+      <DependentUpon>frmConceptosAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContratoAct.resx">
+      <DependentUpon>frmContratoAct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContratosList.resx">
+      <DependentUpon>frmContratosList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFondo.resx">
+      <DependentUpon>frmFondo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGarantesAM.resx">
+      <DependentUpon>frmGarantesAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIngProducto.resx">
+      <DependentUpon>frmIngProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGarantes.resx">
+      <DependentUpon>frmGarantes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLiqInquilinosRet.resx">
+      <DependentUpon>frmLiqInquilinosRet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListAdelPropSdo.resx">
+      <DependentUpon>frmListAdelPropSdo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListAlq.resx">
+      <DependentUpon>frmListAlq.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListConcAdm.resx">
+      <DependentUpon>frmListConcAdm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListRetGan.resx">
+      <DependentUpon>frmListRetGan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListTransf.resx">
+      <DependentUpon>frmListTransf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListVarios.resx">
+      <DependentUpon>frmListVarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListPropiedades.resx">
+      <DependentUpon>frmListPropiedades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListVentas.resx">
+      <DependentUpon>frmListVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdenesPago.resx">
+      <DependentUpon>frmOrdenesPago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdenesPagoAM.resx">
+      <DependentUpon>frmOrdenesPagoAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdenPagoChDev.resx">
+      <DependentUpon>frmOrdenPagoChDev.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdenPagoConf.resx">
+      <DependentUpon>frmOrdenPagoConf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdenPagoPago.resx">
+      <DependentUpon>frmOrdenPagoPago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdenPagoVs.resx">
+      <DependentUpon>frmOrdenPagoVs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdenPagoVsAg.resx">
+      <DependentUpon>frmOrdenPagoVsAg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPagos.resx">
+      <DependentUpon>frmPagos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPagosAgrCmp.resx">
+      <DependentUpon>frmPagosAgrCmp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPermisos.resx">
+      <DependentUpon>frmPermisos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropiedadesAM.resx">
+      <DependentUpon>frmPropiedadesAM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropiedades.resx">
+      <DependentUpon>frmPropiedades.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCajaAM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCajaAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCajaList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCajaList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCajaRec.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCajaRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCajaTransf.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCajaTransf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChCartera.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmChCartera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChCarteraAm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmChCarteraAm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChCarteraList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmChCarteraList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCodigoAut.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCodigoAut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContrato.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmContrato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContratoEsc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmContratoEsc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContratoFin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmContratoFin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContratosAbm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmContratosAbm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepartamentos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDepartamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFactInqAM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFactInqAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFactInquilino.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFactInquilino.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInquilinos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmInquilinos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInquilinosAM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmInquilinosAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLiqInquilinosCH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLiqInquilinosCH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLiqInquilinosAM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLiqInquilinosAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLiqInquilinosCS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLiqInquilinosCS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLiqInquilinos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLiqInquilinos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPagoCh.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPagoCh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLiqPropietAdl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLiqPropietAdl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLiqPropiet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLiqPropiet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLiqPropietABM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLiqPropietABM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLiqPropProy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLiqPropProy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLiqTransf.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLiqTransf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListConcFijos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmListConcFijos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParametros.resx">
+      <DependentUpon>frmParametros.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlanCtasAM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPlanCtasAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropConc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPropConc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropConcAM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPropConcAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropietAg.resx">
+      <DependentUpon>frmPropietAg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropietariosAM.resx">
+      <DependentUpon>frmPropietariosAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProveedores.resx">
+      <DependentUpon>frmProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProveedoresAM.resx">
+      <DependentUpon>frmProveedoresAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegError.resx">
+      <DependentUpon>frmRegError.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRendPropPend.resx">
+      <DependentUpon>frmRendPropPend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte.resx">
+      <DependentUpon>frmReporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRestValDef.resx">
+      <DependentUpon>frmRestValDef.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeñasAM.resx">
+      <DependentUpon>frmSeñasAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSucursales.resx">
+      <DependentUpon>frmSucursales.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLiqInquilinosPend.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLiqInquilinosPend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListInquilinos.resx">
+      <DependentUpon>frmListInquilinos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLiqPropietPend.resx">
+      <DependentUpon>frmLiqPropietPend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuariosCC.resx">
+      <DependentUpon>frmUsuariosCC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentas.resx">
+      <DependentUpon>frmVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentasAM.resx">
+      <DependentUpon>frmVentasAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentasAMProd.resx">
+      <DependentUpon>frmVentasAMProd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentasRenum.resx">
+      <DependentUpon>frmVentasRenum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropietarios.resx">
+      <DependentUpon>frmPropietarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRepDb.resx">
+      <DependentUpon>frmRepDb.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Compilado\Report\Caja.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Caja.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\ChCartera.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ChCartera.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\CompCaja.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CompCaja.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\EstDeudaInq.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EstDeudaInq.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\LiqInqDetCob.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LiqInqDetCob.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\ListInq.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListInq1.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\OrdPagoOtr.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OrdPagoOtr.vb</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Reporte.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte.vb</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Compilado\Report\ReciboX.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReciboX.vb</LastGenOutput>
+    </None>
+    <None Include="Compilado\Report\ResDeudaInq.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ResDeudaInq.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="packages\DotVVM.2.3.1\.signature.p7s" />
+    <None Include="packages\DotVVM.2.3.1\DotVVM.2.3.1.nupkg" />
+    <None Include="packages\DotVVM.2.3.1\tools\dnc\DotVVM.Compiler.deps.json" />
+    <None Include="packages\DotVVM.2.3.1\tools\dnc\DotVVM.Compiler.runtimeconfig.json" />
+    <None Include="packages\DotVVM.Contrib.CrystalReportViewer.2.3.2\.signature.p7s" />
+    <None Include="packages\DotVVM.Contrib.CrystalReportViewer.2.3.2\contentFiles\any\net451\CrystalReportViewerPage.aspx.cs.pp" />
+    <None Include="packages\DotVVM.Contrib.CrystalReportViewer.2.3.2\contentFiles\any\net451\CrystalReportViewerPage.aspx.designer.cs.pp" />
+    <None Include="packages\DotVVM.Contrib.CrystalReportViewer.2.3.2\contentFiles\any\net451\CrystalReportViewerPage.aspx.pp" />
+    <None Include="packages\DotVVM.Contrib.CrystalReportViewer.2.3.2\contentFiles\any\net451\web.config.transform" />
+    <None Include="packages\DotVVM.Contrib.CrystalReportViewer.2.3.2\content\CrystalReportViewerPage.aspx.cs.pp" />
+    <None Include="packages\DotVVM.Contrib.CrystalReportViewer.2.3.2\content\CrystalReportViewerPage.aspx.designer.cs.pp" />
+    <None Include="packages\DotVVM.Contrib.CrystalReportViewer.2.3.2\content\CrystalReportViewerPage.aspx.pp" />
+    <None Include="packages\DotVVM.Contrib.CrystalReportViewer.2.3.2\content\web.config.transform" />
+    <None Include="packages\DotVVM.Contrib.CrystalReportViewer.2.3.2\DotVVM.Contrib.CrystalReportViewer.2.3.2.nupkg" />
+    <None Include="packages\DotVVM.Core.2.3.1\.signature.p7s" />
+    <None Include="packages\DotVVM.Core.2.3.1\DotVVM.Core.2.3.1.nupkg" />
+    <None Include="packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\.signature.p7s" />
+    <None Include="packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\Microsoft.CodeAnalysis.Analyzers.1.0.0.nupkg" />
+    <None Include="packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\ThirdPartyNotices.rtf" />
+    <None Include="packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\tools\install.ps1" />
+    <None Include="packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\tools\uninstall.ps1" />
+    <None Include="packages\Microsoft.CodeAnalysis.Common.1.0.0\.signature.p7s" />
+    <None Include="packages\Microsoft.CodeAnalysis.Common.1.0.0\Microsoft.CodeAnalysis.Common.1.0.0.nupkg" />
+    <None Include="packages\Microsoft.CodeAnalysis.Common.1.0.0\ThirdPartyNotices.rtf" />
+    <None Include="packages\Microsoft.CodeAnalysis.CSharp.1.0.0\.signature.p7s" />
+    <None Include="packages\Microsoft.CodeAnalysis.CSharp.1.0.0\Microsoft.CodeAnalysis.CSharp.1.0.0.nupkg" />
+    <None Include="packages\Microsoft.CodeAnalysis.CSharp.1.0.0\ThirdPartyNotices.rtf" />
+    <None Include="packages\Microsoft.Extensions.DependencyInjection.1.0.0\.signature.p7s" />
+    <None Include="packages\Microsoft.Extensions.DependencyInjection.1.0.0\Microsoft.Extensions.DependencyInjection.1.0.0.nupkg" />
+    <None Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0\.signature.p7s" />
+    <None Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0.nupkg" />
+    <None Include="packages\Microsoft.Extensions.Options.1.0.0\.signature.p7s" />
+    <None Include="packages\Microsoft.Extensions.Options.1.0.0\Microsoft.Extensions.Options.1.0.0.nupkg" />
+    <None Include="packages\Microsoft.Extensions.Primitives.1.0.0\.signature.p7s" />
+    <None Include="packages\Microsoft.Extensions.Primitives.1.0.0\Microsoft.Extensions.Primitives.1.0.0.nupkg" />
+    <None Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\.signature.p7s" />
+    <None Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\content\web.config.install.xdt" />
+    <None Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\license\License_ReportViewer.rtf" />
+    <None Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0.nupkg" />
+    <None Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\tools\install.ps1" />
+    <None Include="packages\Microsoft.SqlServer.Types.14.0.314.76\.signature.p7s" />
+    <None Include="packages\Microsoft.SqlServer.Types.14.0.314.76\license\license_SysClrTypes.rtf" />
+    <None Include="packages\Microsoft.SqlServer.Types.14.0.314.76\Microsoft.SqlServer.Types.14.0.314.76.nupkg" />
+    <None Include="packages\Microsoft.SqlServer.Types.14.0.314.76\tools\install.ps1" />
+    <None Include="packages\Microsoft.SqlServer.Types.14.0.314.76\tools\uninstall.ps1" />
+    <None Include="packages\Newtonsoft.Json.10.0.3\.signature.p7s" />
+    <None Include="packages\Newtonsoft.Json.10.0.3\LICENSE.md" />
+    <None Include="packages\Newtonsoft.Json.10.0.3\Newtonsoft.Json.10.0.3.nupkg" />
+    <None Include="packages\Newtonsoft.Json.10.0.3\tools\install.ps1" />
+    <None Include="packages\System.Collections.4.0.11\.signature.p7s" />
+    <None Include="packages\System.Collections.4.0.11\lib\MonoAndroid10\_._" />
+    <None Include="packages\System.Collections.4.0.11\lib\MonoTouch10\_._" />
+    <None Include="packages\System.Collections.4.0.11\lib\net45\_._" />
+    <None Include="packages\System.Collections.4.0.11\lib\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Collections.4.0.11\lib\win8\_._" />
+    <None Include="packages\System.Collections.4.0.11\lib\wp80\_._" />
+    <None Include="packages\System.Collections.4.0.11\lib\wpa81\_._" />
+    <None Include="packages\System.Collections.4.0.11\lib\xamarinios10\_._" />
+    <None Include="packages\System.Collections.4.0.11\lib\xamarinmac20\_._" />
+    <None Include="packages\System.Collections.4.0.11\lib\xamarintvos10\_._" />
+    <None Include="packages\System.Collections.4.0.11\lib\xamarinwatchos10\_._" />
+    <None Include="packages\System.Collections.4.0.11\ref\MonoAndroid10\_._" />
+    <None Include="packages\System.Collections.4.0.11\ref\MonoTouch10\_._" />
+    <None Include="packages\System.Collections.4.0.11\ref\net45\_._" />
+    <None Include="packages\System.Collections.4.0.11\ref\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Collections.4.0.11\ref\win8\_._" />
+    <None Include="packages\System.Collections.4.0.11\ref\wp80\_._" />
+    <None Include="packages\System.Collections.4.0.11\ref\wpa81\_._" />
+    <None Include="packages\System.Collections.4.0.11\ref\xamarinios10\_._" />
+    <None Include="packages\System.Collections.4.0.11\ref\xamarinmac20\_._" />
+    <None Include="packages\System.Collections.4.0.11\ref\xamarintvos10\_._" />
+    <None Include="packages\System.Collections.4.0.11\ref\xamarinwatchos10\_._" />
+    <None Include="packages\System.Collections.4.0.11\System.Collections.4.0.11.nupkg" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\.signature.p7s" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\lib\MonoAndroid10\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\lib\MonoTouch10\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\lib\net45\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\lib\portable-net45+win8+wpa81\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\lib\win8\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\lib\wpa81\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\lib\xamarinios10\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\lib\xamarinmac20\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\lib\xamarintvos10\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\lib\xamarinwatchos10\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\ref\MonoAndroid10\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\ref\MonoTouch10\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\ref\net45\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\ref\portable-net45+win8+wpa81\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\ref\win8\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\ref\wpa81\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\ref\xamarinios10\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\ref\xamarinmac20\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\ref\xamarintvos10\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\ref\xamarinwatchos10\_._" />
+    <None Include="packages\System.Collections.Concurrent.4.0.12\System.Collections.Concurrent.4.0.12.nupkg" />
+    <None Include="packages\System.Collections.Immutable.1.1.36\.signature.p7s" />
+    <None Include="packages\System.Collections.Immutable.1.1.36\License-Stable.rtf" />
+    <None Include="packages\System.Collections.Immutable.1.1.36\System.Collections.Immutable.1.1.36.nupkg" />
+    <None Include="packages\System.ComponentModel.4.0.1\.signature.p7s" />
+    <None Include="packages\System.ComponentModel.4.0.1\lib\MonoAndroid10\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\lib\MonoTouch10\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\lib\net45\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\lib\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\lib\win8\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\lib\wp80\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\lib\wpa81\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\lib\xamarinios10\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\lib\xamarinmac20\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\lib\xamarintvos10\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\lib\xamarinwatchos10\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\ref\MonoAndroid10\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\ref\MonoTouch10\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\ref\net45\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\ref\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\ref\win8\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\ref\wp80\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\ref\wpa81\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\ref\xamarinios10\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\ref\xamarinmac20\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\ref\xamarintvos10\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\ref\xamarinwatchos10\_._" />
+    <None Include="packages\System.ComponentModel.4.0.1\System.ComponentModel.4.0.1.nupkg" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\.signature.p7s" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\lib\MonoAndroid10\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\lib\MonoTouch10\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\lib\net45\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\lib\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\lib\win8\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\lib\wp80\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\lib\wpa81\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\lib\xamarinios10\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\lib\xamarinmac20\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\lib\xamarintvos10\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\lib\xamarinwatchos10\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\ref\MonoAndroid10\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\ref\MonoTouch10\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\ref\net45\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\ref\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\ref\win8\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\ref\wp80\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\ref\wpa81\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\ref\xamarinios10\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\ref\xamarinmac20\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\ref\xamarintvos10\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\ref\xamarinwatchos10\_._" />
+    <None Include="packages\System.Diagnostics.Debug.4.0.11\System.Diagnostics.Debug.4.0.11.nupkg" />
+    <None Include="packages\System.Globalization.4.0.11\.signature.p7s" />
+    <None Include="packages\System.Globalization.4.0.11\lib\MonoAndroid10\_._" />
+    <None Include="packages\System.Globalization.4.0.11\lib\MonoTouch10\_._" />
+    <None Include="packages\System.Globalization.4.0.11\lib\net45\_._" />
+    <None Include="packages\System.Globalization.4.0.11\lib\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Globalization.4.0.11\lib\win8\_._" />
+    <None Include="packages\System.Globalization.4.0.11\lib\wp80\_._" />
+    <None Include="packages\System.Globalization.4.0.11\lib\wpa81\_._" />
+    <None Include="packages\System.Globalization.4.0.11\lib\xamarinios10\_._" />
+    <None Include="packages\System.Globalization.4.0.11\lib\xamarinmac20\_._" />
+    <None Include="packages\System.Globalization.4.0.11\lib\xamarintvos10\_._" />
+    <None Include="packages\System.Globalization.4.0.11\lib\xamarinwatchos10\_._" />
+    <None Include="packages\System.Globalization.4.0.11\ref\MonoAndroid10\_._" />
+    <None Include="packages\System.Globalization.4.0.11\ref\MonoTouch10\_._" />
+    <None Include="packages\System.Globalization.4.0.11\ref\net45\_._" />
+    <None Include="packages\System.Globalization.4.0.11\ref\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Globalization.4.0.11\ref\win8\_._" />
+    <None Include="packages\System.Globalization.4.0.11\ref\wp80\_._" />
+    <None Include="packages\System.Globalization.4.0.11\ref\wpa81\_._" />
+    <None Include="packages\System.Globalization.4.0.11\ref\xamarinios10\_._" />
+    <None Include="packages\System.Globalization.4.0.11\ref\xamarinmac20\_._" />
+    <None Include="packages\System.Globalization.4.0.11\ref\xamarintvos10\_._" />
+    <None Include="packages\System.Globalization.4.0.11\ref\xamarinwatchos10\_._" />
+    <None Include="packages\System.Globalization.4.0.11\System.Globalization.4.0.11.nupkg" />
+    <None Include="packages\System.Linq.4.1.0\.signature.p7s" />
+    <None Include="packages\System.Linq.4.1.0\lib\MonoAndroid10\_._" />
+    <None Include="packages\System.Linq.4.1.0\lib\MonoTouch10\_._" />
+    <None Include="packages\System.Linq.4.1.0\lib\net45\_._" />
+    <None Include="packages\System.Linq.4.1.0\lib\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Linq.4.1.0\lib\win8\_._" />
+    <None Include="packages\System.Linq.4.1.0\lib\wp80\_._" />
+    <None Include="packages\System.Linq.4.1.0\lib\wpa81\_._" />
+    <None Include="packages\System.Linq.4.1.0\lib\xamarinios10\_._" />
+    <None Include="packages\System.Linq.4.1.0\lib\xamarinmac20\_._" />
+    <None Include="packages\System.Linq.4.1.0\lib\xamarintvos10\_._" />
+    <None Include="packages\System.Linq.4.1.0\lib\xamarinwatchos10\_._" />
+    <None Include="packages\System.Linq.4.1.0\ref\MonoAndroid10\_._" />
+    <None Include="packages\System.Linq.4.1.0\ref\MonoTouch10\_._" />
+    <None Include="packages\System.Linq.4.1.0\ref\net45\_._" />
+    <None Include="packages\System.Linq.4.1.0\ref\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Linq.4.1.0\ref\win8\_._" />
+    <None Include="packages\System.Linq.4.1.0\ref\wp80\_._" />
+    <None Include="packages\System.Linq.4.1.0\ref\wpa81\_._" />
+    <None Include="packages\System.Linq.4.1.0\ref\xamarinios10\_._" />
+    <None Include="packages\System.Linq.4.1.0\ref\xamarinmac20\_._" />
+    <None Include="packages\System.Linq.4.1.0\ref\xamarintvos10\_._" />
+    <None Include="packages\System.Linq.4.1.0\ref\xamarinwatchos10\_._" />
+    <None Include="packages\System.Linq.4.1.0\System.Linq.4.1.0.nupkg" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\.signature.p7s" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\lib\MonoAndroid10\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\lib\MonoTouch10\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\lib\net45\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\lib\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\lib\win8\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\lib\wp80\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\lib\wpa81\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\lib\xamarinios10\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\lib\xamarinmac20\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\lib\xamarintvos10\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\lib\xamarinwatchos10\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\ref\MonoAndroid10\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\ref\MonoTouch10\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\ref\net45\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\ref\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\ref\win8\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\ref\wp80\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\ref\wpa81\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\ref\xamarinios10\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\ref\xamarinmac20\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\ref\xamarintvos10\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\ref\xamarinwatchos10\_._" />
+    <None Include="packages\System.Linq.Expressions.4.1.0\System.Linq.Expressions.4.1.0.nupkg" />
+    <None Include="packages\System.Reflection.4.1.0\.signature.p7s" />
+    <None Include="packages\System.Reflection.4.1.0\lib\MonoAndroid10\_._" />
+    <None Include="packages\System.Reflection.4.1.0\lib\MonoTouch10\_._" />
+    <None Include="packages\System.Reflection.4.1.0\lib\net45\_._" />
+    <None Include="packages\System.Reflection.4.1.0\lib\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Reflection.4.1.0\lib\win8\_._" />
+    <None Include="packages\System.Reflection.4.1.0\lib\wp80\_._" />
+    <None Include="packages\System.Reflection.4.1.0\lib\wpa81\_._" />
+    <None Include="packages\System.Reflection.4.1.0\lib\xamarinios10\_._" />
+    <None Include="packages\System.Reflection.4.1.0\lib\xamarinmac20\_._" />
+    <None Include="packages\System.Reflection.4.1.0\lib\xamarintvos10\_._" />
+    <None Include="packages\System.Reflection.4.1.0\lib\xamarinwatchos10\_._" />
+    <None Include="packages\System.Reflection.4.1.0\ref\MonoAndroid10\_._" />
+    <None Include="packages\System.Reflection.4.1.0\ref\MonoTouch10\_._" />
+    <None Include="packages\System.Reflection.4.1.0\ref\net45\_._" />
+    <None Include="packages\System.Reflection.4.1.0\ref\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Reflection.4.1.0\ref\win8\_._" />
+    <None Include="packages\System.Reflection.4.1.0\ref\wp80\_._" />
+    <None Include="packages\System.Reflection.4.1.0\ref\wpa81\_._" />
+    <None Include="packages\System.Reflection.4.1.0\ref\xamarinios10\_._" />
+    <None Include="packages\System.Reflection.4.1.0\ref\xamarinmac20\_._" />
+    <None Include="packages\System.Reflection.4.1.0\ref\xamarintvos10\_._" />
+    <None Include="packages\System.Reflection.4.1.0\ref\xamarinwatchos10\_._" />
+    <None Include="packages\System.Reflection.4.1.0\System.Reflection.4.1.0.nupkg" />
+    <None Include="packages\System.Reflection.Metadata.1.0.21\.signature.p7s" />
+    <None Include="packages\System.Reflection.Metadata.1.0.21\License-Stable.rtf" />
+    <None Include="packages\System.Reflection.Metadata.1.0.21\System.Reflection.Metadata.1.0.21.nupkg" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\.signature.p7s" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\lib\MonoAndroid10\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\lib\MonoTouch10\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\lib\net45\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\lib\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\lib\win8\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\lib\wp80\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\lib\wpa81\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\lib\xamarinios10\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\lib\xamarinmac20\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\lib\xamarintvos10\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\lib\xamarinwatchos10\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\ref\MonoAndroid10\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\ref\MonoTouch10\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\ref\net45\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\ref\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\ref\win8\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\ref\wp80\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\ref\wpa81\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\ref\xamarinios10\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\ref\xamarinmac20\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\ref\xamarintvos10\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\ref\xamarinwatchos10\_._" />
+    <None Include="packages\System.Resources.ResourceManager.4.0.1\System.Resources.ResourceManager.4.0.1.nupkg" />
+    <None Include="packages\System.Runtime.4.1.0\.signature.p7s" />
+    <None Include="packages\System.Runtime.4.1.0\lib\MonoAndroid10\_._" />
+    <None Include="packages\System.Runtime.4.1.0\lib\MonoTouch10\_._" />
+    <None Include="packages\System.Runtime.4.1.0\lib\net45\_._" />
+    <None Include="packages\System.Runtime.4.1.0\lib\portable-net45+win8+wp80+wpa81\_._" />
+    <None Include="packages\System.Runtime.4.1.0\lib\win8\_._" />
+    <None Include="packages\System.Runtime.4.1.0\lib\wp80\_._" />
+    <None Include="packages\System.Runtime.4.1.0\lib\wpa81\_._" />
+    <None Include="packages\System.Runtime.4.1.0\lib\xamarinios10\_._" />
+    <None Include="packages\System.Runtime.4.1.0\lib\xamarinmac20\_._" />
+    <None Include="packages\System.Runtime.4.1.0\lib\xamarintvos10\_._" />
+    <None Include="packages\System.Runtime.4.1.0\lib\xamarinwatchos10\_._" />
+    <None Include="packages\System.Runtime.4.1.0\ref\MonoAndroid10\_._" />
+    <None Include="packages\System.Runtime.4.1.0\ref\MonoTouch10\_._" />
+    <None Include="packages\System.Runtime.4.1.0\ref\net45\_._" />
+    <None Include="packages\System.Runtime.4.1.0\ref\portable-net45+win8+wp80+wpa81\_._" />
+    <None Include="packages\System.Runtime.4.1.0\ref\win8\_._" />
+    <None Include="packages\System.Runtime.4.1.0\ref\wp80\_._" />
+    <None Include="packages\System.Runtime.4.1.0\ref\wpa81\_._" />
+    <None Include="packages\System.Runtime.4.1.0\ref\xamarinios10\_._" />
+    <None Include="packages\System.Runtime.4.1.0\ref\xamarinmac20\_._" />
+    <None Include="packages\System.Runtime.4.1.0\ref\xamarintvos10\_._" />
+    <None Include="packages\System.Runtime.4.1.0\ref\xamarinwatchos10\_._" />
+    <None Include="packages\System.Runtime.4.1.0\System.Runtime.4.1.0.nupkg" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\.signature.p7s" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\lib\MonoAndroid10\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\lib\MonoTouch10\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\lib\net45\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\lib\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\lib\win8\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\lib\wp80\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\lib\wpa81\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\lib\xamarinios10\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\lib\xamarinmac20\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\lib\xamarintvos10\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\lib\xamarinwatchos10\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\ref\MonoAndroid10\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\ref\MonoTouch10\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\ref\net45\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\ref\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\ref\win8\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\ref\wp80\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\ref\wpa81\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\ref\xamarinios10\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\ref\xamarinmac20\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\ref\xamarintvos10\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\ref\xamarinwatchos10\_._" />
+    <None Include="packages\System.Runtime.Extensions.4.1.0\System.Runtime.Extensions.4.1.0.nupkg" />
+    <None Include="packages\System.Threading.4.0.11\.signature.p7s" />
+    <None Include="packages\System.Threading.4.0.11\lib\MonoAndroid10\_._" />
+    <None Include="packages\System.Threading.4.0.11\lib\MonoTouch10\_._" />
+    <None Include="packages\System.Threading.4.0.11\lib\net45\_._" />
+    <None Include="packages\System.Threading.4.0.11\lib\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Threading.4.0.11\lib\win8\_._" />
+    <None Include="packages\System.Threading.4.0.11\lib\wp80\_._" />
+    <None Include="packages\System.Threading.4.0.11\lib\wpa81\_._" />
+    <None Include="packages\System.Threading.4.0.11\lib\xamarinios10\_._" />
+    <None Include="packages\System.Threading.4.0.11\lib\xamarinmac20\_._" />
+    <None Include="packages\System.Threading.4.0.11\lib\xamarintvos10\_._" />
+    <None Include="packages\System.Threading.4.0.11\lib\xamarinwatchos10\_._" />
+    <None Include="packages\System.Threading.4.0.11\ref\MonoAndroid10\_._" />
+    <None Include="packages\System.Threading.4.0.11\ref\MonoTouch10\_._" />
+    <None Include="packages\System.Threading.4.0.11\ref\net45\_._" />
+    <None Include="packages\System.Threading.4.0.11\ref\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Threading.4.0.11\ref\win8\_._" />
+    <None Include="packages\System.Threading.4.0.11\ref\wp80\_._" />
+    <None Include="packages\System.Threading.4.0.11\ref\wpa81\_._" />
+    <None Include="packages\System.Threading.4.0.11\ref\xamarinios10\_._" />
+    <None Include="packages\System.Threading.4.0.11\ref\xamarinmac20\_._" />
+    <None Include="packages\System.Threading.4.0.11\ref\xamarintvos10\_._" />
+    <None Include="packages\System.Threading.4.0.11\ref\xamarinwatchos10\_._" />
+    <None Include="packages\System.Threading.4.0.11\System.Threading.4.0.11.nupkg" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\.signature.p7s" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\lib\MonoAndroid10\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\lib\MonoTouch10\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\lib\net45\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\lib\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\lib\win8\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\lib\wp80\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\lib\wpa81\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\lib\xamarinios10\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\lib\xamarinmac20\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\lib\xamarintvos10\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\lib\xamarinwatchos10\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\ref\MonoAndroid10\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\ref\MonoTouch10\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\ref\net45\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\ref\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\ref\win8\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\ref\wp80\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\ref\wpa81\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\ref\xamarinios10\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\ref\xamarinmac20\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\ref\xamarintvos10\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\ref\xamarinwatchos10\_._" />
+    <None Include="packages\System.Threading.Tasks.4.0.11\System.Threading.Tasks.4.0.11.nupkg" />
+    <None Include="packages\System.ValueTuple.4.4.0\.signature.p7s" />
+    <None Include="packages\System.ValueTuple.4.4.0\lib\MonoAndroid10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\lib\MonoTouch10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\lib\netcoreapp2.0\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\lib\netstandard2.0\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\lib\xamarinios10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\lib\xamarinmac20\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\lib\xamarintvos10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\lib\xamarinwatchos10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\ref\MonoAndroid10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\ref\MonoTouch10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\ref\netcoreapp2.0\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\ref\netstandard2.0\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\ref\xamarinios10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\ref\xamarinmac20\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\ref\xamarintvos10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\ref\xamarinwatchos10\_._" />
+    <None Include="packages\System.ValueTuple.4.4.0\System.ValueTuple.4.4.0.nupkg" />
+    <None Include="Reportes2\AdelantosProp.rpt" />
+    <None Include="Reportes2\AdelPropSdo.rpt" />
+    <None Include="Reportes2\AdelPropSdoRes.rpt" />
+    <None Include="Reportes2\AlqNoAct.rpt" />
+    <None Include="Reportes2\AlquileresEsc.rpt" />
+    <None Include="Reportes2\Caja.rpt" />
+    <None Include="Reportes2\CajaRec.rpt" />
+    <None Include="Reportes2\CajaRecRec.rpt" />
+    <None Include="Reportes2\CajaRecRes.rpt" />
+    <None Include="Reportes2\CartaDoc.Doc" />
+    <None Include="Reportes2\ChCartera.rpt" />
+    <None Include="Reportes2\CobrosOtr.rpt" />
+    <None Include="Reportes2\ComACobrar.rpt" />
+    <None Include="Reportes2\ComACobrarDet.rpt" />
+    <None Include="Reportes2\ComisionesACob.rpt" />
+    <None Include="Reportes2\ComisionesPrd.rpt" />
+    <None Include="Reportes2\ComisionesTipo.rpt" />
+    <None Include="Reportes2\CompCaja.rpt" />
+    <None Include="Reportes2\CompraOtr.rpt" />
+    <None Include="Reportes2\Comprobantes.rpt" />
+    <None Include="Reportes2\ConceptosAdm.rpt" />
+    <None Include="Reportes2\ConceptosFijos.rpt" />
+    <None Include="Reportes2\ConceptosFijosAct.rpt" />
+    <None Include="Reportes2\CttosActivos.rpt" />
+    <None Include="Reportes2\CttoTmp.doc" />
+    <None Include="Reportes2\Cumples.rpt" />
+    <None Include="Reportes2\EstDeudaInq.rpt" />
+    <None Include="Reportes2\Estdeudainq2.rpt" />
+    <None Include="Reportes2\EstDeudaTInq.rpt" />
+    <None Include="Reportes2\EstDeudaTInqR.rpt" />
+    <None Include="Reportes2\FacturaA.rpt" />
+    <None Include="Reportes2\FacturaB.rpt" />
+    <None Include="Reportes2\InfRetGcias.rpt" />
+    <None Include="Reportes2\InfRetGciasPrt.rpt" />
+    <None Include="Reportes2\InfTransfProp.rpt" />
+    <None Include="Reportes2\Ingresos.rpt" />
+    <None Include="Reportes2\IngresosRes.rpt" />
+    <None Include="Reportes2\InquilinosGar.rpt" />
+    <None Include="Reportes2\IvaCompras.rpt" />
+    <None Include="Reportes2\IvaVentas.rpt" />
+    <None Include="Reportes2\LiqCondominio.rpt" />
+    <None Include="Reportes2\LiqInqCH.rpt" />
+    <None Include="Reportes2\LiqInqConf.rpt" />
+    <None Include="Reportes2\LiqInqPend.rpt" />
+    <None Include="Reportes2\LiqPendientes.rpt" />
+    <None Include="Reportes2\LiqPropiet.rpt" />
+    <None Include="Reportes2\LiqPropietAdl.rpt" />
+    <None Include="Reportes2\LiqPropietAdlAut.rpt" />
+    <None Include="Reportes2\LiqPropietAg.rpt" />
+    <None Include="Reportes2\LiqPropietCH.rpt" />
+    <None Include="Reportes2\LiqPropietDupl.rpt" />
+    <None Include="Reportes2\LiqPropietRes.rpt" />
+    <None Include="Reportes2\LiqPropietResumen.rpt" />
+    <None Include="Reportes2\listcontratos.rpt" />
+    <None Include="Reportes2\listcttovenc.rpt" />
+    <None Include="Reportes2\ListInq.RPT" />
+    <None Include="Reportes2\mayor.rpt" />
+    <None Include="Reportes2\MayorAcu.rpt" />
+    <None Include="Reportes2\MayorCaja.rpt" />
+    <None Include="Reportes2\MovBanco.rpt" />
+    <None Include="Reportes2\OrdPago.rpt" />
+    <None Include="Reportes2\OrdPagoOtr.rpt" />
+    <None Include="Reportes2\Pago.rpt" />
+    <None Include="Reportes2\PagoOtr.rpt" />
+    <None Include="Reportes2\PagosProp.rpt" />
+    <None Include="Reportes2\PagosPropRes.rpt" />
+    <None Include="Reportes2\PlanCtas.rpt" />
+    <None Include="Reportes2\PrdTipo.rpt" />
+    <None Include="Reportes2\PrdTipoAlq.rpt" />
+    <None Include="Reportes2\Propiedades.rpt" />
+    <None Include="Reportes2\PropiedConc.rpt" />
+    <None Include="Reportes2\PropiedInq.rpt" />
+    <None Include="Reportes2\PropiedNomencl.rpt" />
+    <None Include="Reportes2\Propietarios.rpt" />
+    <None Include="Reportes2\PropietIna.rpt" />
+    <None Include="Reportes2\PropietInq.rpt" />
+    <None Include="Reportes2\PropietMin.rpt" />
+    <None Include="Reportes2\PropietMinC.rpt" />
+    <None Include="Reportes2\PropietMinP.rpt" />
+    <None Include="Reportes2\PropietRes.rpt" />
+    <None Include="Reportes2\rboinqa.rpt" />
+    <None Include="Reportes2\rboinqb.rpt" />
+    <None Include="Reportes2\RboOtrosA.rpt" />
+    <None Include="Reportes2\RboOtrosB.rpt" />
+    <None Include="Reportes2\ReciboX.rpt" />
+    <None Include="Reportes2\ReciboX0.rpt" />
+    <None Include="Reportes2\ReciboXx.rpt" />
+    <None Include="Reportes2\ResALiqProp.rpt" />
+    <None Include="Reportes2\ResALiqPropRes.rpt" />
+    <None Include="Reportes2\ResAlqAnual.rpt" />
+    <None Include="Reportes2\ResCtaInq.rpt" />
+    <None Include="Reportes2\ResCtaProp.rpt" />
+    <None Include="Reportes2\ResDeudaInq.rpt" />
+    <None Include="Reportes2\ResumenCaja.rpt" />
+    <None Include="Reportes2\RETGCIAS.RPT" />
+    <None Include="Reportes2\Señas.rpt" />
+    <None Include="Reportes2\TransfInq.rpt" />
+    <None Include="Reportes2\TransfProp.rpt" />
+    <None Include="Reportes2\Ventas.rpt" />
+    <None Include="Reportes2\VentasPend.rpt" />
+    <None Include="Reportes2\VentasProp.rpt" />
+    <None Include="Reportes2\_ReciboX.rpt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <BaseApplicationManifest Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\vb\Microsoft.CodeAnalysis.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\vb\Microsoft.CodeAnalysis.VisualBasic.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CrystalReportViewerPage.aspx" />
+    <Content Include="CrystalReportViewerPage.aspx.cs" />
+    <Content Include="CrystalReportViewerPage.aspx.designer.cs" />
+    <Content Include="Img\Logo_Confl.jpg" />
+    <Content Include="Img\Logo_Semi.jpeg" />
+    <Content Include="packages\DotVVM.2.3.1\lib\net451\DotVVM.Framework.dll" />
+    <Content Include="packages\DotVVM.2.3.1\lib\net451\DotVVM.Framework.pdb" />
+    <Content Include="packages\DotVVM.2.3.1\lib\net451\DotVVM.Framework.xml" />
+    <Content Include="packages\DotVVM.2.3.1\lib\netstandard2.0\DotVVM.Framework.dll" />
+    <Content Include="packages\DotVVM.2.3.1\lib\netstandard2.0\DotVVM.Framework.pdb" />
+    <Content Include="packages\DotVVM.2.3.1\lib\netstandard2.0\DotVVM.Framework.xml" />
+    <Content Include="packages\DotVVM.2.3.1\tools\dnc\DotVVM.Compiler.dll" />
+    <Content Include="packages\DotVVM.2.3.1\tools\dnc\DotVVM.Compiler.pdb" />
+    <Content Include="packages\DotVVM.2.3.1\tools\dnc\Newtonsoft.Json.dll" />
+    <Content Include="packages\DotVVM.2.3.1\tools\DotVVM.Compiler.exe" />
+    <Content Include="packages\DotVVM.Contrib.CrystalReportViewer.2.3.2\lib\net451\DotVVM.Contrib.dll" />
+    <Content Include="packages\DotVVM.Core.2.3.1\lib\net451\DotVVM.Core.dll" />
+    <Content Include="packages\DotVVM.Core.2.3.1\lib\net451\DotVVM.Core.pdb" />
+    <Content Include="packages\DotVVM.Core.2.3.1\lib\net451\DotVVM.Core.xml" />
+    <Content Include="packages\DotVVM.Core.2.3.1\lib\netstandard1.6\DotVVM.Core.dll" />
+    <Content Include="packages\DotVVM.Core.2.3.1\lib\netstandard1.6\DotVVM.Core.pdb" />
+    <Content Include="packages\DotVVM.Core.2.3.1\lib\netstandard1.6\DotVVM.Core.xml" />
+    <Content Include="packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\vb\Microsoft.CodeAnalysis.Analyzers.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\vb\Microsoft.CodeAnalysis.VisualBasic.Analyzers.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.Common.1.0.0\lib\net45\Microsoft.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.Common.1.0.0\lib\net45\Microsoft.CodeAnalysis.xml" />
+    <Content Include="packages\Microsoft.CodeAnalysis.Common.1.0.0\lib\portable-net45+win8\Microsoft.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.Common.1.0.0\lib\portable-net45+win8\Microsoft.CodeAnalysis.xml" />
+    <Content Include="packages\Microsoft.CodeAnalysis.CSharp.1.0.0\lib\net45\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.CSharp.1.0.0\lib\net45\Microsoft.CodeAnalysis.CSharp.xml" />
+    <Content Include="packages\Microsoft.CodeAnalysis.CSharp.1.0.0\lib\portable-net45+win8\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="packages\Microsoft.CodeAnalysis.CSharp.1.0.0\lib\portable-net45+win8\Microsoft.CodeAnalysis.CSharp.xml" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.1.0.0\lib\netstandard1.1\Microsoft.Extensions.DependencyInjection.dll" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.1.0.0\lib\netstandard1.1\Microsoft.Extensions.DependencyInjection.xml" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <Content Include="packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.xml" />
+    <Content Include="packages\Microsoft.Extensions.Options.1.0.0\lib\netstandard1.0\Microsoft.Extensions.Options.dll" />
+    <Content Include="packages\Microsoft.Extensions.Options.1.0.0\lib\netstandard1.0\Microsoft.Extensions.Options.xml" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.1.0.0\lib\netstandard1.0\Microsoft.Extensions.Primitives.dll" />
+    <Content Include="packages\Microsoft.Extensions.Primitives.1.0.0\lib\netstandard1.0\Microsoft.Extensions.Primitives.xml" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\de\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\de\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\de\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\de\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\de\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\de\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\es\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\es\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\es\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\es\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\es\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\es\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\fr\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\fr\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\fr\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\fr\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\fr\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\fr\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\it\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\it\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\it\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\it\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\it\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\it\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\ja\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\ja\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\ja\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\ja\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\ja\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\ja\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\ko\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\ko\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\ko\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\ko\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\ko\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\ko\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.WebForms.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.WinForms.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\pt\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\pt\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\pt\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\pt\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\pt\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\pt\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\ru\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\ru\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\ru\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\ru\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\ru\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\ru\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\zh-CHS\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\zh-CHS\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\zh-CHT\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\zh-CHT\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\license\ThirdPartyNotices_ReportViewer.txt" />
+    <Content Include="packages\Microsoft.SqlServer.Types.14.0.314.76\content\SqlServerTypes\Loader.cs" />
+    <Content Include="packages\Microsoft.SqlServer.Types.14.0.314.76\content\SqlServerTypes\readme.htm" />
+    <Content Include="packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.14.0.314.76\nativeBinaries\x64\msvcr120.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.14.0.314.76\nativeBinaries\x64\SqlServerSpatial140.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.14.0.314.76\nativeBinaries\x86\msvcr120.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.14.0.314.76\nativeBinaries\x86\SqlServerSpatial140.dll" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\net20\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\net20\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\net35\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\net35\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\net40\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\net40\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\netstandard1.0\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\netstandard1.0\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\netstandard1.3\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\portable-net40+sl5+win8+wp8+wpa81\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\portable-net40+sl5+win8+wp8+wpa81\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.xml" />
+    <Content Include="packages\System.Collections.4.0.11\dotnet_library_license.txt" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netcore50\de\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netcore50\es\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netcore50\fr\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netcore50\it\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netcore50\ja\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netcore50\ko\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netcore50\ru\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netcore50\System.Collections.dll" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netcore50\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netcore50\zh-hans\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netcore50\zh-hant\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.0\de\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.0\es\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.0\fr\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.0\it\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.0\ja\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.0\ko\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.0\ru\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.0\System.Collections.dll" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.0\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.0\zh-hans\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.0\zh-hant\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.3\de\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.3\es\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.3\fr\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.3\it\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.3\ja\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.3\ko\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.3\ru\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.3\System.Collections.dll" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.3\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.3\zh-hans\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ref\netstandard1.3\zh-hant\System.Collections.xml" />
+    <Content Include="packages\System.Collections.4.0.11\ThirdPartyNotices.txt" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\dotnet_library_license.txt" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\lib\netcore50\System.Collections.Concurrent.dll" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\lib\netstandard1.3\System.Collections.Concurrent.dll" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netcore50\de\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netcore50\es\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netcore50\fr\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netcore50\it\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netcore50\ja\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netcore50\ko\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netcore50\ru\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netcore50\System.Collections.Concurrent.dll" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netcore50\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netcore50\zh-hans\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netcore50\zh-hant\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.1\de\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.1\es\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.1\fr\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.1\it\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.1\ja\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.1\ko\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.1\ru\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.1\System.Collections.Concurrent.dll" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.1\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.1\zh-hans\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.1\zh-hant\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.3\de\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.3\es\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.3\fr\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.3\it\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.3\ja\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.3\ko\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.3\ru\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.3\System.Collections.Concurrent.dll" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.3\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.3\zh-hans\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ref\netstandard1.3\zh-hant\System.Collections.Concurrent.xml" />
+    <Content Include="packages\System.Collections.Concurrent.4.0.12\ThirdPartyNotices.txt" />
+    <Content Include="packages\System.Collections.Immutable.1.1.36\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll" />
+    <Content Include="packages\System.Collections.Immutable.1.1.36\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\dotnet_library_license.txt" />
+    <Content Include="packages\System.ComponentModel.4.0.1\lib\netcore50\System.ComponentModel.dll" />
+    <Content Include="packages\System.ComponentModel.4.0.1\lib\netstandard1.3\System.ComponentModel.dll" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netcore50\de\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netcore50\es\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netcore50\fr\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netcore50\it\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netcore50\ja\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netcore50\ko\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netcore50\ru\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netcore50\System.ComponentModel.dll" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netcore50\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netcore50\zh-hans\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netcore50\zh-hant\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netstandard1.0\de\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netstandard1.0\es\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netstandard1.0\fr\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netstandard1.0\it\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netstandard1.0\ja\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netstandard1.0\ko\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netstandard1.0\ru\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netstandard1.0\System.ComponentModel.dll" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netstandard1.0\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netstandard1.0\zh-hans\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ref\netstandard1.0\zh-hant\System.ComponentModel.xml" />
+    <Content Include="packages\System.ComponentModel.4.0.1\ThirdPartyNotices.txt" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\dotnet_library_license.txt" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netcore50\de\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netcore50\es\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netcore50\fr\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netcore50\it\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netcore50\ja\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netcore50\ko\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netcore50\ru\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netcore50\System.Diagnostics.Debug.dll" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netcore50\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netcore50\zh-hans\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netcore50\zh-hant\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.0\de\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.0\es\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.0\fr\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.0\it\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.0\ja\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.0\ko\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.0\ru\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.0\System.Diagnostics.Debug.dll" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.0\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.0\zh-hans\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.0\zh-hant\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.3\de\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.3\es\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.3\fr\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.3\it\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.3\ja\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.3\ko\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.3\ru\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.3\System.Diagnostics.Debug.dll" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.3\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.3\zh-hans\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ref\netstandard1.3\zh-hant\System.Diagnostics.Debug.xml" />
+    <Content Include="packages\System.Diagnostics.Debug.4.0.11\ThirdPartyNotices.txt" />
+    <Content Include="packages\System.Globalization.4.0.11\dotnet_library_license.txt" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netcore50\de\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netcore50\es\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netcore50\fr\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netcore50\it\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netcore50\ja\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netcore50\ko\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netcore50\ru\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netcore50\System.Globalization.dll" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netcore50\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netcore50\zh-hans\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netcore50\zh-hant\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.0\de\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.0\es\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.0\fr\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.0\it\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.0\ja\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.0\ko\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.0\ru\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.0\System.Globalization.dll" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.0\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.0\zh-hans\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.0\zh-hant\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.3\de\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.3\es\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.3\fr\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.3\it\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.3\ja\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.3\ko\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.3\ru\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.3\System.Globalization.dll" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.3\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.3\zh-hans\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ref\netstandard1.3\zh-hant\System.Globalization.xml" />
+    <Content Include="packages\System.Globalization.4.0.11\ThirdPartyNotices.txt" />
+    <Content Include="packages\System.Linq.4.1.0\dotnet_library_license.txt" />
+    <Content Include="packages\System.Linq.4.1.0\lib\net463\System.Linq.dll" />
+    <Content Include="packages\System.Linq.4.1.0\lib\netcore50\System.Linq.dll" />
+    <Content Include="packages\System.Linq.4.1.0\lib\netstandard1.6\System.Linq.dll" />
+    <Content Include="packages\System.Linq.4.1.0\ref\net463\System.Linq.dll" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netcore50\de\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netcore50\es\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netcore50\fr\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netcore50\it\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netcore50\ja\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netcore50\ko\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netcore50\ru\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netcore50\System.Linq.dll" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netcore50\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netcore50\zh-hans\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netcore50\zh-hant\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.0\de\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.0\es\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.0\fr\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.0\it\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.0\ja\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.0\ko\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.0\ru\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.0\System.Linq.dll" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.0\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.0\zh-hans\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.0\zh-hant\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.6\de\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.6\es\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.6\fr\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.6\it\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.6\ja\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.6\ko\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.6\ru\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.6\System.Linq.dll" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.6\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.6\zh-hans\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ref\netstandard1.6\zh-hant\System.Linq.xml" />
+    <Content Include="packages\System.Linq.4.1.0\ThirdPartyNotices.txt" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\dotnet_library_license.txt" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\lib\net463\System.Linq.Expressions.dll" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\lib\netcore50\System.Linq.Expressions.dll" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\lib\netstandard1.6\System.Linq.Expressions.dll" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\net463\System.Linq.Expressions.dll" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netcore50\de\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netcore50\es\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netcore50\fr\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netcore50\it\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netcore50\ja\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netcore50\ko\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netcore50\ru\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netcore50\System.Linq.Expressions.dll" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netcore50\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netcore50\zh-hans\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netcore50\zh-hant\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.0\de\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.0\es\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.0\fr\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.0\it\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.0\ja\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.0\ko\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.0\ru\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.0\System.Linq.Expressions.dll" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.0\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.0\zh-hans\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.0\zh-hant\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.3\de\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.3\es\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.3\fr\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.3\it\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.3\ja\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.3\ko\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.3\ru\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.3\System.Linq.Expressions.dll" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.3\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.3\zh-hans\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.3\zh-hant\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.6\de\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.6\es\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.6\fr\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.6\it\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.6\ja\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.6\ko\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.6\ru\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.6\System.Linq.Expressions.dll" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.6\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.6\zh-hans\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ref\netstandard1.6\zh-hant\System.Linq.Expressions.xml" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\runtimes\aot\lib\netcore50\System.Linq.Expressions.dll" />
+    <Content Include="packages\System.Linq.Expressions.4.1.0\ThirdPartyNotices.txt" />
+    <Content Include="packages\System.Reflection.4.1.0\dotnet_library_license.txt" />
+    <Content Include="packages\System.Reflection.4.1.0\lib\net462\System.Reflection.dll" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\net462\System.Reflection.dll" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netcore50\de\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netcore50\es\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netcore50\fr\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netcore50\it\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netcore50\ja\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netcore50\ko\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netcore50\ru\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netcore50\System.Reflection.dll" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netcore50\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netcore50\zh-hans\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netcore50\zh-hant\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.0\de\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.0\es\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.0\fr\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.0\it\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.0\ja\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.0\ko\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.0\ru\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.0\System.Reflection.dll" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.0\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.0\zh-hans\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.0\zh-hant\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.3\de\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.3\es\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.3\fr\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.3\it\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.3\ja\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.3\ko\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.3\ru\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.3\System.Reflection.dll" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.3\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.3\zh-hans\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.3\zh-hant\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.5\de\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.5\es\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.5\fr\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.5\it\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.5\ja\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.5\ko\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.5\ru\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.5\System.Reflection.dll" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.5\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.5\zh-hans\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ref\netstandard1.5\zh-hant\System.Reflection.xml" />
+    <Content Include="packages\System.Reflection.4.1.0\ThirdPartyNotices.txt" />
+    <Content Include="packages\System.Reflection.Metadata.1.0.21\lib\portable-net45+win8\System.Reflection.Metadata.dll" />
+    <Content Include="packages\System.Reflection.Metadata.1.0.21\lib\portable-net45+win8\System.Reflection.Metadata.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\dotnet_library_license.txt" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netcore50\de\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netcore50\es\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netcore50\fr\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netcore50\it\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netcore50\ja\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netcore50\ko\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netcore50\ru\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netcore50\System.Resources.ResourceManager.dll" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netcore50\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netcore50\zh-hans\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netcore50\zh-hant\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netstandard1.0\de\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netstandard1.0\es\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netstandard1.0\fr\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netstandard1.0\it\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netstandard1.0\ja\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netstandard1.0\ko\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netstandard1.0\ru\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netstandard1.0\System.Resources.ResourceManager.dll" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netstandard1.0\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netstandard1.0\zh-hans\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ref\netstandard1.0\zh-hant\System.Resources.ResourceManager.xml" />
+    <Content Include="packages\System.Resources.ResourceManager.4.0.1\ThirdPartyNotices.txt" />
+    <Content Include="packages\System.Runtime.4.1.0\dotnet_library_license.txt" />
+    <Content Include="packages\System.Runtime.4.1.0\lib\net462\System.Runtime.dll" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\net462\System.Runtime.dll" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netcore50\de\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netcore50\es\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netcore50\fr\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netcore50\it\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netcore50\ja\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netcore50\ko\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netcore50\ru\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netcore50\System.Runtime.dll" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netcore50\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netcore50\zh-hans\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netcore50\zh-hant\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.0\de\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.0\es\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.0\fr\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.0\it\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.0\ja\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.0\ko\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.0\ru\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.0\System.Runtime.dll" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.0\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.0\zh-hans\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.0\zh-hant\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.2\de\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.2\es\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.2\fr\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.2\it\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.2\ja\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.2\ko\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.2\ru\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.2\System.Runtime.dll" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.2\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.2\zh-hans\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.2\zh-hant\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.3\de\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.3\es\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.3\fr\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.3\it\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.3\ja\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.3\ko\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.3\ru\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.3\System.Runtime.dll" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.3\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.3\zh-hans\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.3\zh-hant\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.5\de\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.5\es\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.5\fr\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.5\it\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.5\ja\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.5\ko\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.5\ru\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.5\System.Runtime.dll" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.5\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.5\zh-hans\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ref\netstandard1.5\zh-hant\System.Runtime.xml" />
+    <Content Include="packages\System.Runtime.4.1.0\ThirdPartyNotices.txt" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\dotnet_library_license.txt" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\lib\net462\System.Runtime.Extensions.dll" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\net462\System.Runtime.Extensions.dll" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netcore50\de\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netcore50\es\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netcore50\fr\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netcore50\it\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netcore50\ja\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netcore50\ko\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netcore50\ru\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netcore50\System.Runtime.Extensions.dll" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netcore50\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netcore50\zh-hans\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netcore50\zh-hant\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.0\de\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.0\es\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.0\fr\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.0\it\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.0\ja\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.0\ko\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.0\ru\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.0\System.Runtime.Extensions.dll" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.0\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.0\zh-hans\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.0\zh-hant\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.3\de\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.3\es\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.3\fr\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.3\it\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.3\ja\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.3\ko\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.3\ru\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.3\System.Runtime.Extensions.dll" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.3\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.3\zh-hans\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.3\zh-hant\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.5\de\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.5\es\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.5\fr\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.5\it\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.5\ja\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.5\ko\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.5\ru\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.5\System.Runtime.Extensions.dll" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.5\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.5\zh-hans\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ref\netstandard1.5\zh-hant\System.Runtime.Extensions.xml" />
+    <Content Include="packages\System.Runtime.Extensions.4.1.0\ThirdPartyNotices.txt" />
+    <Content Include="packages\System.Threading.4.0.11\dotnet_library_license.txt" />
+    <Content Include="packages\System.Threading.4.0.11\lib\netcore50\System.Threading.dll" />
+    <Content Include="packages\System.Threading.4.0.11\lib\netstandard1.3\System.Threading.dll" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netcore50\de\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netcore50\es\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netcore50\fr\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netcore50\it\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netcore50\ja\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netcore50\ko\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netcore50\ru\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netcore50\System.Threading.dll" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netcore50\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netcore50\zh-hans\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netcore50\zh-hant\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.0\de\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.0\es\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.0\fr\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.0\it\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.0\ja\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.0\ko\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.0\ru\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.0\System.Threading.dll" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.0\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.0\zh-hans\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.0\zh-hant\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.3\de\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.3\es\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.3\fr\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.3\it\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.3\ja\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.3\ko\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.3\ru\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.3\System.Threading.dll" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.3\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.3\zh-hans\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\ref\netstandard1.3\zh-hant\System.Threading.xml" />
+    <Content Include="packages\System.Threading.4.0.11\runtimes\aot\lib\netcore50\System.Threading.dll" />
+    <Content Include="packages\System.Threading.4.0.11\ThirdPartyNotices.txt" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\dotnet_library_license.txt" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netcore50\de\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netcore50\es\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netcore50\fr\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netcore50\it\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netcore50\ja\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netcore50\ko\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netcore50\ru\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netcore50\System.Threading.Tasks.dll" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netcore50\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netcore50\zh-hans\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netcore50\zh-hant\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.0\de\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.0\es\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.0\fr\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.0\it\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.0\ja\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.0\ko\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.0\ru\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.0\System.Threading.Tasks.dll" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.0\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.0\zh-hans\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.0\zh-hant\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.3\de\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.3\es\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.3\fr\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.3\it\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.3\ja\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.3\ko\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.3\ru\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.3\System.Threading.Tasks.dll" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.3\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.3\zh-hans\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ref\netstandard1.3\zh-hant\System.Threading.Tasks.xml" />
+    <Content Include="packages\System.Threading.Tasks.4.0.11\ThirdPartyNotices.txt" />
+    <Content Include="packages\System.ValueTuple.4.4.0\lib\net461\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.4.0\lib\net461\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.4.0\lib\net47\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.4.0\lib\net47\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.4.0\lib\netstandard1.0\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.4.0\lib\netstandard1.0\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.4.0\lib\portable-net40+sl4+win8+wp8\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.4.0\lib\portable-net40+sl4+win8+wp8\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.4.0\LICENSE.TXT" />
+    <Content Include="packages\System.ValueTuple.4.4.0\ref\net461\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.4.0\ref\net461\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.4.0\ref\net47\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.4.0\ref\net47\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.4.0\ref\portable-net40+sl4+win8+wp8\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.4.0\ref\portable-net40+sl4+win8+wp8\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.4.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.ValueTuple.4.4.0\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.ValueTuple.4.4.0\version.txt" />
+    <Content Include="Compilado\sql\AdmIn.sql" />
+    <None Include="Resources\Email.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
