@@ -200,7 +200,7 @@
                .ExecuteNonQuery()
             Next
          Else
-            .CommandText = "INSERT INTO [dbo].[ContratosAct]( [Numero], [Escalon], [MesesEsc], [Incremento], [Iva], Porcent, [Usuario], [FechaMod]) " &
+            .CommandText = "INSERT INTO ContratosAct( [Numero], [Escalon], [MesesEsc], [Incremento], [Iva], Porcent, [Usuario], [FechaMod]) " &
                            "VALUES( " & Numero & ", " & EscalonM & ", " & tbEscMesesM.Text & ", " & tbEscIncrM.Text & ", 0, " & PorcentM & ", '" & Uid & "', '" & Format(Now, FormatFechaHora) & "')"
             .ExecuteNonQuery()
          End If
