@@ -10,7 +10,7 @@
    Dim Escalon, EscalonM, DiaVenc As Byte
    Dim IncrPorc, IncrPorcM As Double
    Dim MesesEsc, MesesEscM As Byte
-   Dim Porcent As Single
+   Dim Porcent, PorcentM As Single
    Dim CaptCtas As Boolean
    Dim DescAlq, DescIva, cCtaCaja As String
    '
@@ -49,7 +49,8 @@
          .CommandText = "INSERT INTO " & cTmp & " SELECT MesesEsc, FechaVenc, Incremento, Iva, Porcent FROM ContratosAct WHERE Numero = " & Numero
          .ExecuteNonQuery()
          '
-         .CommandText = "SELECT C.Numero, C.FechaContrato, C.Meses, C.PerDesde, C.PerHasta, P.Nombre, C.Propiedad, R.Domicilio, C.Inquilino, I.Nombre AS InqNom, C.Escalon, E.EscDescrip, E.EscSimbolo, C.MesesEsc, C.Incremento, C.DiaVenc FROM Contratos C " &
+         .CommandText = "SELECT C.Numero, C.FechaContrato, C.Meses, C.PerDesde, C.PerHasta, P.Nombre, C.Propiedad, R.Domicilio, C.Inquilino, I.Nombre AS InqNom, C.Escalon, E.EscDescrip, E.EscSimbolo, C.MesesEsc, C.Incremento, C.DiaVenc, C.Porcent " &
+                        "FROM Contratos C " &
                         "INNER JOIN Propietarios P ON C.Propietario = P.Codigo " &
                         "INNER JOIN Propiedades R ON C.Propiedad = R.Codigo " &
                         "INNER JOIN Inquilinos I ON C.Inquilino = I.Codigo " &
@@ -76,12 +77,12 @@
             Propiedad = !Propiedad
             Inquilino = !Inquilino
             DiaVenc = !DiaVenc
-            Porcent = CapturaDato(Cn, "ContratosAct", "Porcent", "Numero = " & Numero)
+            Porcent = !Porcent
             '
             Escalon = !Escalon
             IncrPorc = !Incremento
             MesesEsc = !MesesEsc
-            lblIncrem.Text = "Increm. " & !EscSimbolo
+            lblIncrem.Text = "Increm. " & IIf(Porcent > 0, "%", !EscSimbolo)
             '
             EscalonM = Val(CapturaDato(Cn, "ContratosAct", "Escalon", "Numero = " & !Numero,,, "ContratoActId DESC") & "")
             tbEscalonM.Text = CapturaDato(Cn, "EscContrato", "EscDescrip", "Escalon = " & EscalonM) & ""
@@ -90,6 +91,7 @@
             lblIncremm.Text = "Increm. " & CapturaDato(Cn, "EscContrato", "EscSimbolo", "Escalon = " & EscalonM)
             IncrPorcM = Val(CapturaDato(Cn, "ContratosAct", "Incremento", "Numero = " & !Numero,,, "ContratoActId DESC") & "")
             MesesEscM = Val(CapturaDato(Cn, "ContratosAct", "MesesEsc", "Numero = " & !Numero,,, "ContratoActId DESC") & "")
+            PorcentM = CapturaDato(Cn, "ContratosAct", "Porcent", "Numero = " & Numero)
             '
          End If
          .Close()
@@ -125,17 +127,17 @@
          .ImpAlq = Val(tbImpAlq.Text)
          .Meses = Val(tbMeses.Text)
          .FecIni = dtpDesde.Value
-         .Escalon = EscalonM
-         .IncrPorc = IncrPorcM
-         .MesesEsc = MesesEscM
+         .Escalon = Escalon
+         .IncrPorc = IncrPorc
+         .MesesEsc = MesesEsc
          .Porcent = Porcent
          .ShowDialog(Me)
-         Escalon = .Escalon
-         tbEscalonM.Text = CapturaDato(Cn, "EscContrato", "EscDescrip", "Escalon = " & Escalon)
+         EscalonM = .Escalon
+         tbEscalonM.Text = CapturaDato(Cn, "EscContrato", "EscDescrip", "Escalon = " & EscalonM)
          tbEscIncrM.Text = .IncrPorc
          tbEscMesesM.Text = .MesesEsc
-         porcent = .Porcent
-         lblIncremm.Text = "Increm. " & CapturaDato(Cn, "EscContrato", "EscSimbolo", "Escalon = " & Escalon)
+         PorcentM = .Porcent
+         lblIncremm.Text = "Increm. " & IIf(PorcentM > 0, "%", CapturaDato(Cn, "EscContrato", "EscSimbolo", "Escalon = " & Escalon))
          If tbEscalonM.Text <> tbEscalon.Text Or tbEscMesesM.Text <> tbEscMeses.Text Or tbEscIncrM.Text <> tbEscIncr.Text Then
             cmdAceptar.Enabled = True
          Else
@@ -194,12 +196,12 @@
             End With
             For i = 1 To cMes.Count
                .CommandText = "INSERT INTO ContratosAct( [Numero], [Escalon], [MesesEsc], [Incremento], [Iva], [FechaVenc], [Porcent], [Usuario], [FechaMod]) " &
-                              "VALUES( " & Numero & ", " & Escalon & ", " & cMes(i) & ", " & cImp(i) & ", " & cIva(i) & ", '" & Format(cFec(i), FormatFecha) & "', " & Val(cPor(i) & "") & ", '" & Uid & "', '" & Format(Now, FormatFechaHora) & "')"
+                              "VALUES( " & Numero & ", " & EscalonM & ", " & cMes(i) & ", " & cImp(i) & ", " & cIva(i) & ", '" & Format(cFec(i), FormatFecha) & "', " & Val(cPor(i) & "") & ", '" & Uid & "', '" & Format(Now, FormatFechaHora) & "')"
                .ExecuteNonQuery()
             Next
          Else
             .CommandText = "INSERT INTO [dbo].[ContratosAct]( [Numero], [Escalon], [MesesEsc], [Incremento], [Iva], Porcent, [Usuario], [FechaMod]) " &
-                           "VALUES( " & Numero & ", " & Escalon & ", " & tbEscMesesM.Text & ", " & tbEscIncrM.Text & ", 0, " & Porcent & ", '" & Uid & "', '" & Format(Now, FormatFechaHora) & "')"
+                           "VALUES( " & Numero & ", " & EscalonM & ", " & tbEscMesesM.Text & ", " & tbEscIncrM.Text & ", 0, " & PorcentM & ", '" & Uid & "', '" & Format(Now, FormatFechaHora) & "')"
             .ExecuteNonQuery()
          End If
          '

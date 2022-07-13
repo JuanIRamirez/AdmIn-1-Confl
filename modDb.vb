@@ -2524,6 +2524,12 @@ Module modDb
             nCont = nCont + 1
          End If
          '
+         If Not ExisteColumna("Contratos", "Porcent") Then
+            .CommandText = "ALTER TABLE Contratos ADD [Porcent] [Real] NULL DEFAULT 0"
+            .ExecuteNonQuery()
+            nCont = nCont + 1
+         End If
+         '
          .Dispose()
          '
          If nCont = 0 Then

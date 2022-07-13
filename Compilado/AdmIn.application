@@ -3,7 +3,7 @@
   <assemblyIdentity name="AdmIn.application" version="1.0.0.16" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <description asmv2:publisher="AdmIn" asmv2:product="AdmIn" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true">
-    <deploymentProvider codebase="http://laptop1/AdmIn/AdmIn.application" />
+    <deploymentProvider codebase="http://pc-casa/AdmIn/AdmIn.application" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
     <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
@@ -16,7 +16,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SrVb2g5qnZmEVfbvPR/5NDtY6XNctqH6Ww9P1vAIsic=</dsig:DigestValue>
+        <dsig:DigestValue>/LdT4fj35wJRbWVLYekiq9zTIfRaiCT4eVO9w8MUzdQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

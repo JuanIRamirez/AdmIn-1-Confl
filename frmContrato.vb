@@ -3,6 +3,7 @@ Public Class frmContrato
    Public Escalon As Integer
    Public IncrPorc As Double
    Public MesesEsc As Integer
+   Public Porcent As Single
    '
    Dim Trn As OleDb.OleDbTransaction
    ReadOnly Cnx As New OleDb.OleDbConnection
@@ -1310,28 +1311,29 @@ Public Class frmContrato
          With Cmd
             .Connection = Cn
             .Transaction = Trn
-            .CommandText = "INSERT INTO Contratos( Numero, Texto, Convenio, FechaContrato, FechaC, Propietario, Inquilino, Propiedad, GaranteId, PerDesde, PerHasta, Meses, DiaVenc, Estado, Tipo, Sucursal, NroFact, Escalon, MesesEsc, Incremento, Usuario, FechaMod) " & _
-                           "VALUES( " & tbNroCtto.Text & ", " & _
-                                  "'" & tbContrato.Text & "', " & _
-                                  "'" & tbConvenio.Text & "', " & _
-                                  "'" & Format(dtFechaCtto.Value, FormatFecha) & "', " & _
-                                  "'" & Format(dtFechaCtto.Value, FormatFecha) & "', " & _
-                                        Propietario & ", " & _
-                                        Inquilino & ", " & _
-                                        Propiedad & ", " & _
-                                        GaranteId & ", " & _
-                                  "'" & CalcPeriodo(dtpDesde.Value, 1) & "', " & _
-                                  "'" & CalcPeriodo(dtpDesde.Value, Val(tbMeses.Text)) & "', " & _
-                                        tbMeses.Text & ", " & _
-                                        tbDiaVenc.Text & ", " & _
-                                        vEstado & ", " & _
-                                  "'" & cLetraFact & "', " & _
-                                        prmSucursal & ", " & _
-                                        Val(tbNroFact.Text) & ", " & _
-                                        Escalon & ", " & _
-                                        MesesEsc & ", " & _
-                                        IncrPorc & ", " & _
-                                  "'" & Uid & "', " & _
+            .CommandText = "INSERT INTO Contratos( Numero, Texto, Convenio, FechaContrato, FechaC, Propietario, Inquilino, Propiedad, GaranteId, PerDesde, PerHasta, Meses, DiaVenc, Estado, Tipo, Sucursal, NroFact, Escalon, MesesEsc, Incremento, Porcent, Usuario, FechaMod) " &
+                           "VALUES( " & tbNroCtto.Text & ", " &
+                                  "'" & tbContrato.Text & "', " &
+                                  "'" & tbConvenio.Text & "', " &
+                                  "'" & Format(dtFechaCtto.Value, FormatFecha) & "', " &
+                                  "'" & Format(dtFechaCtto.Value, FormatFecha) & "', " &
+                                        Propietario & ", " &
+                                        Inquilino & ", " &
+                                        Propiedad & ", " &
+                                        GaranteId & ", " &
+                                  "'" & CalcPeriodo(dtpDesde.Value, 1) & "', " &
+                                  "'" & CalcPeriodo(dtpDesde.Value, Val(tbMeses.Text)) & "', " &
+                                        tbMeses.Text & ", " &
+                                        tbDiaVenc.Text & ", " &
+                                        vEstado & ", " &
+                                  "'" & cLetraFact & "', " &
+                                        prmSucursal & ", " &
+                                        Val(tbNroFact.Text) & ", " &
+                                        Escalon & ", " &
+                                        MesesEsc & ", " &
+                                        IncrPorc & ", " &
+                                        Porcent & ", " &
+                                  "'" & Uid & "', " &
                                   "'" & Format(Now, FormatFechaHora) & "')"
             .ExecuteNonQuery()
             '
@@ -1660,6 +1662,7 @@ Public Class frmContrato
             .Escalon = Escalon
             .IncrPorc = IncrPorc
             .MesesEsc = MesesEsc
+            .Porcent = Porcent
             .ShowDialog(Me)
             'tbImpAlq.Text = .ImpAlq
             'tbMeses.Text = .Meses
@@ -1667,6 +1670,7 @@ Public Class frmContrato
             Escalon = .Escalon
             IncrPorc = .IncrPorc
             MesesEsc = .MesesEsc
+            Porcent = .Porcent
             CalcTotCtto()
             CalcImportes()
          End With
@@ -1674,13 +1678,13 @@ Public Class frmContrato
       If Escalon = 0 Then
          lblEscalon.Text = "Uniforme"
       ElseIf Escalon = 1 Then
-         lblEscalon.Text = "Incremental." & vbCrLf & vbCrLf & _
-                      IIf(IncrPorc > 0, "Aumenta", "Disminuye") & _
-                      " $" & Math.Abs(IncrPorc) & ", todos los meses."
+         lblEscalon.Text = "Incremental." & vbCrLf & vbCrLf &
+                      IIf(IncrPorc > 0, "Aumenta", "Disminuye") &
+                      IIf(Porcent = 0, " $", " %") & Math.Abs(IncrPorc) & ", todos los meses."
       ElseIf Escalon = 2 Then
-         lblEscalon.Text = "En Bloques." & vbCrLf & vbCrLf & _
-                      IIf(IncrPorc > 0, "Aumenta", "Disminuye") & _
-                      " $" & Math.Abs(IncrPorc) & ", cada " & MesesEsc & " meses."
+         lblEscalon.Text = "En Bloques." & vbCrLf & vbCrLf &
+                      IIf(IncrPorc > 0, "Aumenta", "Disminuye") &
+                      IIf(Porcent = 0, " $", " %") & Math.Abs(IncrPorc) & ", cada " & MesesEsc & " meses."
       ElseIf Escalon = 3 Then
          lblEscalon.Text = "En porcentaje" & vbCrLf & vbCrLf & _
                       IIf(IncrPorc > 0, "Aumenta ", "Disminuye ") & _
