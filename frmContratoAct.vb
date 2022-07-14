@@ -77,7 +77,7 @@
             Propiedad = !Propiedad
             Inquilino = !Inquilino
             DiaVenc = !DiaVenc
-            Porcent = !Porcent
+            Porcent = Val(!Porcent & "")
             '
             Escalon = !Escalon
             IncrPorc = !Incremento

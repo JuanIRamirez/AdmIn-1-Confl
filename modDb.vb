@@ -2519,15 +2519,15 @@ Module modDb
          End If
          '
          If Not ExisteColumna("ContratosAct", "Porcent") Then
-            .CommandText = "ALTER TABLE ContratosAct ADD [Porcent] [Real] NULL DEFAULT 0"
+            .CommandText = "ALTER TABLE ContratosAct ADD [Porcent] [Real] NOT NULL DEFAULT 0"
             .ExecuteNonQuery()
-            nCont = nCont + 1
+            nCont += 1
          End If
          '
          If Not ExisteColumna("Contratos", "Porcent") Then
-            .CommandText = "ALTER TABLE Contratos ADD [Porcent] [Real] NULL DEFAULT 0"
+            .CommandText = "ALTER TABLE Contratos ADD [Porcent] [Real] NOT NULL DEFAULT 0"
             .ExecuteNonQuery()
-            nCont = nCont + 1
+            nCont += 1
          End If
          '
          .Dispose()

@@ -116,15 +116,15 @@ Public Class frmPropConc
                 "WHERE Propiedad = " & Propiedad & " " & _
                 "ORDER BY Concepto, FecDesde DESC"
       Else
-         cSql = "SELECT Concepto, FecDesde, Detalle, Importe, " & _
-                " Imputacion AS Imp, aPropiet, Automatico, NoInquilino " & _
-                "FROM PropiedConc P " & _
-                "WHERE Propiedad = " & Propiedad & _
-                "  AND FecDesde >= ( SELECT MAX(FecDesde) FROM PropiedConc " & _
-                "              WHERE Propiedad = P.Propiedad " & _
-                "                AND Concepto = P.Concepto " & _
-                "                AND FecDesde <= " & strFEC & Format(Today, FormatFecha) & strFEC & _
-                "              GROUP BY Concepto) " & _
+         cSql = "SELECT Concepto, FecDesde, Detalle, Importe, " &
+                " Imputacion AS Imp, aPropiet, Automatico, NoInquilino " &
+                "FROM PropiedConc P " &
+                "WHERE Propiedad = " & Propiedad &
+                "  AND FecDesde = ( SELECT MAX(FecDesde) FROM PropiedConc " &
+                "              WHERE Propiedad = P.Propiedad " &
+                "                AND Concepto = P.Concepto " &
+                "                AND FecDesde <= " & strFEC & Format(Today, FormatFecha) & strFEC &
+                "              GROUP BY Concepto) " &
                 "ORDER BY Concepto, FecDesde DESC"
       End If
       '
